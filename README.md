@@ -12,6 +12,10 @@ The `kicad/` directory contains a starter KiCad 7 project (`ORCATemplate`) for
 building ORCA module boards, including a 3D `.step` model and a custom
 `EEPROM.pretty` footprint library.
 
+The ORCA module connects via two headers, `CN1` and `CN2`:
+
+![ORCA connector symbols](./assets/KiCADsymbols.png)
+
 > **Note:** `kicad/fp-lib-table` currently references footprint libraries
 > (`IDC_10`, `IDC_20`) by absolute path on another machine. Update these
 > library paths (or replace them with the project-relative `${KIPRJMOD}`
