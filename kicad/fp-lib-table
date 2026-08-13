@@ -1,0 +1,9 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "IDC_10") (type "KiCad") (uri "C:/Users/ALewis/Documents/Orca Template/IDC_10.pretty") (options "") (descr ""))
+	(lib (name "IDC_20") (type "KiCad") (uri "C:/Users/ALewis/Documents/Orca Template/IDC_20.pretty") (options "") (descr ""))
+	(lib (name "IDC_10") (type "KiCad") (uri "C:/Users/ALewis/Documents/Orca Template/IDC_10.pretty") (options "") (descr ""))
+	(lib (name "IDC_10") (type "KiCad") (uri "C:/Users/ALewis/Documents/Orca Template/IDC_10.pretty") (options "") (descr ""))
+	(lib (name "IDC_10") (type "KiCad") (uri "C:/Users/ALewis/Documents/Orca Template/IDC_10.pretty") (options "") (descr ""))
+	(lib (name "EEPROM") (type "KiCad") (uri "${KIPRJMOD}/EEPROM.pretty") (options "") (descr ""))
+)

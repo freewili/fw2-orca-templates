@@ -1,0 +1,19 @@
+# KiCad local history / auto-backups (editor-generated, not source)
+**/.history/
+**/*-backups/
+
+# KiCad autosave / lock / cache files
+*-save.kicad_pcb
+*-save.kicad_sch
+_autosave-*
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.bak
+*~
+fp-info-cache
+*.lck
+.stackrelex
+
+# OS cruft
+.DS_Store
+Thumbs.db
