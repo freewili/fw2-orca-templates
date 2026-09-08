@@ -5,6 +5,7 @@ Example project templates for the FreeWili 2 ORCA module.
 Currently supports:
 
 - [KiCad](./kicad) — schematic/PCB template (`ORCATemplate`)
+- [Connector pinouts](./PINOUTS.md) — Free Wili OG and Free Wili 2 20-position and 10-position connector pin tables
 
 ## KiCad template
 
