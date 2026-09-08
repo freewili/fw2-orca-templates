@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Wili 20-Pin GPIO Pinout</title>
+  <style>
+    :root { --bg:#101114; --panel:#1b1d22; --panel-2:#252830; --text:#f7f7f5; --muted:#aeb3bd; --accent:#eb3d48; --spi:#3aa85b; --uart:#9a70e7; --canfd:#ef963f; --i2c:#4f9bdc; --ground:#08090b; --power:#df4a4a; --vref:#98a0a8; --gpio:#e6c84a; --debug:#98a0a8; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-width:320px; overflow-x:hidden; background:var(--bg); color:var(--text); font:16px/1.45 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    button { font:inherit; }
+    .shell { width:min(1800px, calc(100% - 32px)); margin:auto; }
+    header { display:flex; align-items:center; gap:20px; padding:28px 0 22px; border-bottom:1px solid #30333a; }
+    .mark { display:grid; place-items:center; width:74px; height:54px; background:var(--accent); color:#fff; font-weight:900; font-size:13px; letter-spacing:.08em; line-height:1; text-align:center; }
+    .eyebrow { margin:0 0 3px; color:var(--accent); font-size:.75rem; font-weight:800; letter-spacing:.16em; }
+    h1 { margin:0; font-size:clamp(1.45rem, 3vw, 2.25rem); line-height:1.1; }
+    header > div:last-child, .diagram-head > div { min-width:0; }
+    .intro { margin:8px 0 0; color:var(--muted); max-width:700px; overflow-wrap:anywhere; }
+    main { display:grid; grid-template-columns:minmax(0, 1fr); gap:22px; min-width:0; padding:26px 0; }
+    .panel, #details { background:var(--panel); border:1px solid #30333a; border-radius:14px; box-shadow:0 14px 35px #0003; }
+    .panel { min-width:0; padding:clamp(15px, 3vw, 28px); overflow:hidden; }
+    .diagram-head { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:16px; margin-bottom:20px; }
+    h2 { margin:0; font-size:1rem; letter-spacing:.04em; }
+    .reset { flex:0 0 auto; padding:.55em .85em; border:1px solid #4b505a; border-radius:7px; background:transparent; color:var(--text); cursor:pointer; }
+    .connector-label { color:var(--muted); font-size:.78rem; letter-spacing:.08em; text-transform:uppercase; }
+    #pinout { display:grid; gap:14px; min-width:0; }
+    .pin-row { display:grid; grid-template-columns:repeat(5, minmax(0, 1fr)) 22px repeat(5, minmax(0, 1fr)); gap:5px; align-items:stretch; min-width:620px; }
+    .pin-row.top .pin-card { flex-direction:column; }
+    .pin-row.bottom .pin-card { flex-direction:column-reverse; }
+    .pin-card { display:flex; gap:7px; min-width:0; }
+    .pin-card.notch-gap { grid-column:6; position:relative; min-height:82px; }
+    .pin-card.notch-gap::after { content:""; position:absolute; inset:26px 2px; border:2px solid #525761; border-top:0; border-radius:0 0 10px 10px; }
+    .signal { display:grid; gap:3px; min-height:2.6em; overflow-wrap:anywhere; color:var(--muted); font-size:clamp(.57rem, 1.5vw, .78rem); line-height:1.2; text-align:center; }
+    .signal-variant { display:flex; align-items:center; justify-content:center; gap:3px; border-radius:4px; color:color-mix(in srgb, var(--variant-color) 62%, var(--text)); transition:opacity .15s, background .15s, box-shadow .15s; }
+    .signal-variant.matching-variant { background:color-mix(in srgb, var(--variant-color) 26%, transparent); box-shadow:0 0 0 1px var(--variant-color); }
+    .signal-variant.nonmatching-variant { opacity:.3; }
+    .badge { padding:1px 4px; border-radius:3px; background:#3a3e47; color:#fff; font-size:.57rem; font-weight:800; letter-spacing:.04em; }
+    .badge.fw2 { background:var(--accent); }
+    .pin { min-height:50px; padding:5px 3px; border:2px solid color-mix(in srgb, var(--group-color) 72%, #fff); border-radius:8px; background:color-mix(in srgb, var(--group-color) 35%, #17191d); color:#fff; cursor:pointer; font-weight:800; }
+    .pin .number { display:block; font-size:.7rem; opacity:.85; }
+    .pin .assignment { display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:clamp(.58rem,1.4vw,.75rem); }
+    .pin.dimmed, .legend-button.dimmed { opacity:.28; }
+    .pin.selected, .legend-button.selected { outline:3px solid #fff; outline-offset:2px; box-shadow:0 0 0 5px var(--accent); }
+    button:hover { filter:brightness(1.16); }
+    button:focus-visible { outline:3px solid #fff; outline-offset:3px; }
+    #legend { display:flex; flex-wrap:wrap; gap:8px; margin-top:27px; padding-top:19px; border-top:1px solid #30333a; }
+    .legend-button { --group-color:var(--gpio); display:inline-flex; align-items:center; gap:7px; padding:.45em .65em; border:1px solid #4a4e57; border-radius:99px; background:#252830; color:var(--text); cursor:pointer; font-size:.82rem; }
+    .swatch { width:10px; height:10px; border-radius:50%; background:var(--group-color); box-shadow:0 0 0 1px #fff5; }
+    #details { padding:24px; align-self:start; }
+    #details h2 { color:var(--accent); margin-bottom:12px; }
+    #details p { color:var(--muted); }
+    .detail-card { margin-top:14px; padding:14px; border-left:4px solid var(--group-color); background:var(--panel-2); border-radius:0 8px 8px 0; }
+    .detail-card h3 { margin:0 0 8px; font-size:1rem; }
+    .detail-card dl { display:grid; grid-template-columns:auto 1fr; gap:4px 12px; margin:0; font-size:.88rem; }
+    .detail-card dt { color:var(--muted); } .detail-card dd { margin:0; }
+    footer { padding:18px 0 28px; border-top:1px solid #30333a; color:var(--muted); font-size:.85rem; }
+    a { color:#fff; }
+    @media (max-width:760px) { .panel { padding:16px; } .diagram-head { align-items:flex-start; flex-direction:column; } .pin-row { width:100%; min-width:0; grid-template-columns:repeat(5, minmax(0, 1fr)) 12px repeat(5, minmax(0, 1fr)); gap:3px; } .pin { min-height:44px; } .signal { font-size:.53rem; } .pin-card.notch-gap { min-height:68px; } header { align-items:flex-start; } }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div class="mark" aria-label="Free Wili">FREE<br>WILI</div>
+      <div><p class="eyebrow">20-PIN GPIO</p><h1>Connector pinout</h1><p class="intro">Explore the shared Free Wili OG and Free Wili 2 connector assignments. Select a pin or signal family to focus the diagram.</p></div>
+    </header>
+    <main>
+      <section class="panel" aria-labelledby="diagram-title">
+        <div class="diagram-head"><div><h2 id="diagram-title">Physical connector</h2><span class="connector-label">Even pins upper row · odd pins lower row</span></div><button class="reset" type="button" data-action="reset">Reset selection</button></div>
+        <div id="pinout" aria-label="Free Wili 20-pin connector"></div>
+        <div id="legend" aria-label="Signal category legend"></div>
+      </section>
+      <aside id="details" aria-live="polite"><h2>Pin details</h2><p>Select a physical pin to inspect its assignment, or choose a category to highlight its pins.</p></aside>
+    </main>
+    <footer>Interaction inspired by <a href="https://pinout.xyz/">Pinout.xyz</a>. Source assignments: <a href="PINOUTS.md">PINOUTS.md</a>.</footer>
+  </div>
+  <script>
+    const pinData = [
+      { pin: 1, variants: [{ device: 'Both', signal: 'SPI1_CS_OUT', gpio: 'GPIO13', direction: 'Output', color: 'spi', breakout: 'SPI', groups: 'spi' }], groups: ['spi'] },
+      { pin: 2, variants: [{ device: 'Both', signal: '5V OUT', gpio: '-', direction: 'Power output', color: 'power', breakout: 'Power', groups: 'power' }], groups: ['power'] },
+      { pin: 3, variants: [{ device: 'Both', signal: 'GPIO_27_OUT', gpio: 'GPIO27', direction: 'Output', color: 'gpio', breakout: 'GPIO', groups: 'gpio' }], groups: ['gpio'] },
+      { pin: 4, variants: [{ device: 'OG', signal: 'VREF', gpio: '-', direction: 'Power input', color: 'vref', breakout: 'VREF', groups: 'vref power' }, { device: 'FW2', signal: 'TRIG IN/VREF', gpio: '-', direction: 'Input', color: 'vref', breakout: 'VREF', groups: 'vref power' }], groups: ['vref', 'power'] },
+      { pin: 5, variants: [{ device: 'Both', signal: 'UART1_Rx_IN', gpio: 'GPIO9', direction: 'Input', color: 'uart', breakout: 'UART', groups: 'uart' }], groups: ['uart'] },
+      { pin: 6, variants: [{ device: 'Both', signal: '3.3V OUT', gpio: '-', direction: 'Power output', color: 'power', breakout: 'Power', groups: 'power' }], groups: ['power'] },
+      { pin: 7, variants: [{ device: 'Both', signal: 'UART1_CTS_IN', gpio: 'GPIO10', direction: 'Input', color: 'uart', breakout: 'UART', groups: 'uart' }], groups: ['uart'] },
+      { pin: 8, variants: [{ device: 'Both', signal: 'I2C 0 SCL', gpio: 'GPIO17', direction: 'Bidirectional', color: 'i2c', breakout: 'I2C', groups: 'i2c' }], groups: ['i2c'] },
+      { pin: 9, variants: [{ device: 'Both', signal: 'UART1_Tx_OUT', gpio: 'GPIO8', direction: 'Output', color: 'uart', breakout: 'UART', groups: 'uart' }], groups: ['uart'] },
+      { pin: 10, variants: [{ device: 'Both', signal: 'I2C 0 SDA', gpio: 'GPIO16', direction: 'Bidirectional', color: 'i2c', breakout: 'I2C', groups: 'i2c' }], groups: ['i2c'] },
+      { pin: 11, variants: [{ device: 'Both', signal: 'UART1_RTS_OUT', gpio: 'GPIO11', direction: 'Output', color: 'uart', breakout: 'UART', groups: 'uart' }], groups: ['uart'] },
+      { pin: 12, variants: [{ device: 'Both', signal: 'SPI1_Rx_IN', gpio: 'GPIO12', direction: 'Input', color: 'spi', breakout: 'SPI', groups: 'spi' }], groups: ['spi'] },
+      { pin: 13, variants: [{ device: 'Both', signal: 'SPI1_Tx_OUT', gpio: 'GPIO15', direction: 'Output', color: 'spi', breakout: 'SPI', groups: 'spi' }], groups: ['spi'] },
+      { pin: 14, variants: [{ device: 'Both', signal: 'GPIO26_IN_BI', gpio: 'GPIO26', direction: 'Input', color: 'gpio', breakout: 'GPIO', groups: 'gpio' }], groups: ['gpio'] },
+      { pin: 15, variants: [{ device: 'Both', signal: 'SPI1_SCLK_OUT', gpio: 'GPIO14', direction: 'Output', color: 'spi', breakout: 'SPI', groups: 'spi' }], groups: ['spi'] },
+      { pin: 16, variants: [{ device: 'OG', signal: 'SWCLK IN', gpio: 'SWCLK', direction: 'Input', color: 'debug', breakout: 'Debug', groups: 'debug' }, { device: 'FW2', signal: 'CANFD L', gpio: '-', direction: 'Bidirectional', color: 'canfd', breakout: 'CANFD', groups: 'canfd' }], groups: ['debug', 'canfd'] },
+      { pin: 17, variants: [{ device: 'Both', signal: 'GPIO25_OUT', gpio: 'GPIO25', direction: 'Output', color: 'gpio', breakout: 'GPIO', groups: 'gpio' }], groups: ['gpio'] },
+      { pin: 18, variants: [{ device: 'OG', signal: 'SWDIO', gpio: 'SWDIO', direction: 'Bidirectional', color: 'debug', breakout: 'Debug', groups: 'debug' }, { device: 'FW2', signal: 'CANFD H', gpio: '-', direction: 'Bidirectional', color: 'canfd', breakout: 'CANFD', groups: 'canfd' }], groups: ['debug', 'canfd'] },
+      { pin: 19, variants: [{ device: 'Both', signal: 'GND', gpio: '-', direction: 'Ground', color: 'ground', breakout: 'Ground', groups: 'ground' }], groups: ['ground'] },
+      { pin: 20, variants: [{ device: 'Both', signal: 'GND', gpio: '-', direction: 'Ground', color: 'ground', breakout: 'Ground', groups: 'ground' }], groups: ['ground'] }
+    ];
+
+    const categories = [
+      ['spi', 'SPI'], ['uart', 'UART'], ['canfd', 'CANFD'], ['i2c', 'I2C'], ['gpio', 'GPIO'], ['power', 'Power'], ['vref', 'VREF'], ['ground', 'Ground'], ['debug', 'Debug']
+    ];
+    let selectedPin = null;
+    let selectedGroup = null;
+    const pinout = document.querySelector('#pinout');
+    const legend = document.querySelector('#legend');
+    const details = document.querySelector('#details');
+
+    function primaryColor(pin) { return (pin.variants.find(variant => variant.device === 'FW2') || pin.variants[0]).color; }
+    function signalText(pin) { return pin.variants.map(variant => variant.signal).join(' / '); }
+    function deviceName(variant) { return variant.device === 'FW2' ? 'Free Wili 2' : `Free Wili ${variant.device}`; }
+    function accessibleSignalText(pin) { return pin.variants.map(variant => `${variant.device === 'Both' ? 'Free Wili OG and Free Wili 2' : deviceName(variant)}: ${variant.signal}`).join('; '); }
+    function signalMarkup(pin) {
+      return pin.variants.map(variant => `<span class="signal-variant" data-variant-groups="${variant.groups}" style="--variant-color:var(--${variant.color})">${pin.variants.length > 1 ? `<span class="badge${variant.device === 'FW2' ? ' fw2' : ''}">${variant.device}</span>` : ''}<span>${variant.signal}</span></span>`).join('');
+    }
+    function pinMarkup(pin) {
+      const differing = pin.variants.length > 1;
+      const ordinal = Math.ceil(pin.pin / 2);
+      const column = ordinal > 5 ? ordinal + 1 : ordinal;
+      return `<div class="pin-card" style="grid-column:${column};"><div class="signal">${signalMarkup(pin)}</div><button type="button" class="pin" data-pin="${pin.pin}" data-groups="${pin.groups.join(' ')}" aria-pressed="false" aria-label="Pin ${pin.pin}: ${accessibleSignalText(pin)}" style="--group-color:var(--${primaryColor(pin)})"><span class="number">PIN ${pin.pin}</span><span class="assignment">${differing ? 'OG / FW2' : pin.variants[0].signal}</span></button></div>`;
+    }
+    function renderPinout() {
+      const top = pinData.filter(pin => pin.pin % 2 === 0);
+      const bottom = pinData.filter(pin => pin.pin % 2 === 1);
+      pinout.innerHTML = `<div class="pin-row top">${top.map(pin => pinMarkup(pin)).join('')}<div class="pin-card notch-gap" aria-hidden="true"></div></div><div class="pin-row bottom">${bottom.map(pin => pinMarkup(pin)).join('')}</div>`;
+      pinout.querySelectorAll('[data-pin]').forEach(button => button.addEventListener('click', () => selectPin(Number(button.dataset.pin))));
+    }
+    function renderLegend() {
+      legend.innerHTML = categories.map(([group, label]) => `<button type="button" class="legend-button" data-group="${group}" aria-pressed="false" style="--group-color:var(--${group})"><span class="swatch"></span>${label}</button>`).join('');
+      legend.querySelectorAll('[data-group]').forEach(button => button.addEventListener('click', () => selectGroup(button.dataset.group)));
+    }
+    function renderDetails(pin) {
+      const cards = pin.variants.map(variant => `<article class="detail-card" style="--group-color:var(--${variant.color})"><h3>${variant.device === 'Both' ? 'Free Wili OG + Free Wili 2' : deviceName(variant)}</h3><dl><dt>Pin</dt><dd>${pin.pin}</dd><dt>Signal</dt><dd>${variant.signal}</dd><dt>GPIO / notes</dt><dd>${variant.gpio}</dd><dt>Default direction</dt><dd>${variant.direction}</dd><dt>Breakout group</dt><dd>${variant.breakout}</dd></dl></article>`).join('');
+      details.innerHTML = `<h2>Pin ${pin.pin}</h2>${cards}`;
+    }
+    function selectPin(pinNumber) {
+      selectedPin = pinNumber;
+      selectedGroup = null;
+      renderDetails(pinData.find(pin => pin.pin === pinNumber));
+      syncSelectionClasses();
+    }
+    function selectGroup(groupName) {
+      selectedGroup = groupName;
+      selectedPin = null;
+      details.innerHTML = `<h2>${categories.find(category => category[0] === groupName)[1]} pins</h2><p>Highlighted pins belong to this signal family. Select a pin for its assignment.</p>`;
+      syncSelectionClasses();
+    }
+    function resetSelection() {
+      selectedPin = null;
+      selectedGroup = null;
+      details.innerHTML = '<h2>Pin details</h2><p>Select a physical pin to inspect its assignment, or choose a category to highlight its pins.</p>';
+      syncSelectionClasses();
+    }
+    function syncSelectionClasses() {
+      document.querySelectorAll('[data-pin]').forEach(button => {
+        const matchesGroup = !selectedGroup || button.dataset.groups.split(' ').includes(selectedGroup);
+        button.classList.toggle('selected', selectedPin === Number(button.dataset.pin));
+        button.classList.toggle('dimmed', Boolean(selectedGroup) && !matchesGroup);
+        button.setAttribute('aria-pressed', String(selectedPin === Number(button.dataset.pin)));
+      });
+      document.querySelectorAll('[data-variant-groups]').forEach(variant => {
+        const matchesGroup = selectedGroup && variant.dataset.variantGroups.split(' ').includes(selectedGroup);
+        variant.classList.toggle('matching-variant', Boolean(matchesGroup));
+        variant.classList.toggle('nonmatching-variant', Boolean(selectedGroup) && !matchesGroup);
+      });
+      document.querySelectorAll('[data-group]').forEach(button => {
+        button.classList.toggle('selected', selectedGroup === button.dataset.group);
+        button.classList.toggle('dimmed', Boolean(selectedGroup) && selectedGroup !== button.dataset.group);
+        button.setAttribute('aria-pressed', String(selectedGroup === button.dataset.group));
+      });
+    }
+    function activateWithKeyboard(event) {
+      if (event.key === 'Enter' || event.key === ' ' || event.key === 'Spacebar') {
+        event.preventDefault();
+        event.currentTarget.click();
+      }
+    }
+    function runInteractionSmokeTest() {
+      const result = document.createElement('output');
+      result.id = 'interaction-test-result';
+      try {
+        const assert = (condition, message) => { if (!condition) throw new Error(message); };
+        const press = (target, key) => {
+          target.focus();
+          target.dispatchEvent(new KeyboardEvent('keydown', { key, bubbles: true, cancelable: true }));
+        };
+        for (const [pinNumber, breakoutGroups] of [[4, ['VREF', 'VREF']], [16, ['Debug', 'CANFD']], [18, ['Debug', 'CANFD']]]) {
+          const pin = document.querySelector(`[data-pin="${pinNumber}"]`);
+          pin.click();
+          assert(pin.getAttribute('aria-pressed') === 'true', `Pin click did not select pin ${pinNumber}`);
+          assert(pin.getAttribute('aria-label').includes('Free Wili OG') && pin.getAttribute('aria-label').includes('Free Wili 2'), `Pin ${pinNumber} aria label lacks device names`);
+          const cards = [...details.querySelectorAll('.detail-card')];
+          assert(cards.length === 2, `Pin ${pinNumber} did not render both device variants`);
+          assert(cards.map(card => card.textContent).every((text, index) => text.includes(`Breakout group${breakoutGroups[index]}`)), `Pin ${pinNumber} detail cards lack breakout groups`);
+        }
+
+        for (const [group] of categories) {
+          const category = document.querySelector(`[data-group="${group}"]`);
+          category.click();
+          assert(category.getAttribute('aria-pressed') === 'true', `Legend click did not select ${group}`);
+          assert(document.querySelector(`[data-variant-groups~="${group}"].matching-variant`), `Legend click did not emphasize a matching ${group} variant`);
+        }
+        document.querySelector('[data-group="canfd"]').click();
+        assert(document.querySelector('[data-pin="16"]').closest('.pin-card').querySelector('[data-variant-groups="canfd"]').classList.contains('matching-variant'), 'CANFD did not emphasize pin 16 FW2 variant');
+        assert(document.querySelector('[data-pin="16"]').closest('.pin-card').querySelector('[data-variant-groups="debug"]').classList.contains('nonmatching-variant'), 'CANFD did not de-emphasize pin 16 OG variant');
+
+        document.querySelector('[data-action="reset"]').click();
+        assert(!document.querySelector('.selected, .dimmed'), 'Reset click did not clear selection state');
+
+        const pin1 = document.querySelector('[data-pin="1"]');
+        press(pin1, 'Enter');
+        assert(pin1.getAttribute('aria-pressed') === 'true', 'Enter did not activate a pin button');
+
+        const uart = document.querySelector('[data-group="uart"]');
+        press(uart, ' ');
+        assert(uart.getAttribute('aria-pressed') === 'true', 'Space did not activate a legend button');
+
+        document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
+        assert(!document.querySelector('.selected, .dimmed'), 'Escape did not reset selection state');
+        assert(details.textContent.includes('Select a physical pin'), 'Escape did not restore initial details');
+        result.dataset.status = 'pass';
+        result.textContent = 'PASS: all categories, differing variants, breakout groups, click, Enter, Space, reset, and Escape verified';
+      } catch (error) {
+        result.dataset.status = 'fail';
+        result.textContent = `FAIL: ${error.message}`;
+      }
+      document.body.append(result);
+    }
+    function runLayoutSmokeTest() {
+      const result = document.createElement('output');
+      result.id = 'layout-test-result';
+      try {
+        const assert = (condition, message) => { if (!condition) throw new Error(message); };
+        const panel = document.querySelector('.panel').getBoundingClientRect();
+        const detailPanel = details.getBoundingClientRect();
+        assert(window.matchMedia('(max-width: 760px)').matches, '375px Edge run did not reach the responsive breakpoint');
+        assert(document.documentElement.scrollWidth <= window.innerWidth, 'Page has horizontal overflow at 375px');
+        assert(detailPanel.top >= panel.bottom, 'Details are not below the diagram at 375px');
+        result.dataset.status = 'pass';
+        result.textContent = 'PASS: 375px width has no horizontal overflow and details follow the diagram';
+      } catch (error) {
+        result.dataset.status = 'fail';
+        result.textContent = `FAIL: ${error.message}`;
+      }
+      document.body.append(result);
+    }
+    function runDesktopLayoutSmokeTest() {
+      const result = document.createElement('output');
+      result.id = 'desktop-layout-test-result';
+      try {
+        const assert = (condition, message) => { if (!condition) throw new Error(message); };
+        const main = document.querySelector('main');
+        const panel = document.querySelector('.panel').getBoundingClientRect();
+        const detailPanel = details.getBoundingClientRect();
+        assert(window.matchMedia('(min-width: 1000px)').matches, '1440px Edge run did not reach the desktop layout');
+        assert(detailPanel.top >= panel.bottom, 'Details are not below the diagram on desktop');
+        assert(panel.width >= window.innerWidth * 0.9, 'Diagram does not occupy nearly the full desktop width');
+        assert(document.documentElement.scrollWidth <= window.innerWidth, 'Page has horizontal overflow on desktop');
+        assert(getComputedStyle(main).gridTemplateColumns.split(' ').length === 1, 'Main content is not a single column');
+        result.dataset.status = 'pass';
+        result.textContent = 'PASS: desktop diagram uses the full width and details follow below';
+      } catch (error) {
+        result.dataset.status = 'fail';
+        result.textContent = `FAIL: ${error.message}`;
+      }
+      document.body.append(result);
+    }
+    document.querySelector('[data-action="reset"]').addEventListener('click', resetSelection);
+    document.addEventListener('keydown', event => { if (event.key === 'Escape') resetSelection(); });
+    renderPinout();
+    renderLegend();
+    document.querySelectorAll('[data-pin], [data-group], [data-action="reset"]').forEach(button => button.addEventListener('keydown', activateWithKeyboard));
+    resetSelection();
+    if (location.hash === '#self-test=1') runInteractionSmokeTest();
+    if (location.hash === '#layout-test=1') runLayoutSmokeTest();
+    if (location.hash === '#desktop-layout-test=1') runDesktopLayoutSmokeTest();
+  </script>
+</body>
+</html>

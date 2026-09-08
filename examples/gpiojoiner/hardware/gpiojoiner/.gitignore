@@ -1,0 +1,8 @@
+*.kicad_prl
+~*.lck
+*.bak
+*-backups/
+tools/__pycache__/
+reports/routing/engine-data/
+reports/drc-initial.json
+reports/drc-before-routing.json

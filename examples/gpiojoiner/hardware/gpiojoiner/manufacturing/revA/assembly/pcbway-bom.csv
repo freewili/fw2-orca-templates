@@ -1,0 +1,8 @@
+"Item","Designator","Quantity","Manufacturer","Manufacturer Part Number","Description","Footprint","Type","LCSC Part #","Source"
+"1","J1,J3,J5,J6","4","Sullins Connector Solutions","SFH11-PBPC-D10-RA-BK","20-position keyed female right-angle connector, 2.54 mm","ORCA_20_RA","Through Hole","C3319874","https://jlcpcb.com/partdetail/3884468-SFH11_PBPC_D10_RABK/C3319874"
+"2","J2,J4","2","Sullins Connector Solutions","SFH11-PBPC-D05-RA-BK","10-position keyed female right-angle connector, 2.54 mm","ORCA_10_RA","Through Hole","C3322376","https://jlcpcb.com/partdetail/3886970-SFH11_PBPC_D05_RABK/C3322376"
+"3","SW1","1","C&K / Littelfuse","JS202011CQN","DPDT on-on slide switch; verify contact states against drawing","SW_JS202011CQN","Through Hole","C221663","https://jlcpcb.com/partdetail/CK-JS202011CQN/C221663"
+"4","U1","1","Microchip Technology","24LC02BT-E/OT","2-kbit I2C EEPROM; install blank, program during bring-up","SOT-23-5","SMD","C2061350","https://jlcpcb.com/partdetail/MicrochipTech-24LC02BT_EOT/C2061350"
+"5","D1","1","Nexperia","BAT54C,215","Dual Schottky diode, common cathode","SOT-23","SMD","C37704","https://jlcpcb.com/partdetail/Nexperia-BAT54C215/C37704"
+"6","C1","1","YAGEO","CC0603KRX7R9BB104","100 nF, 50 V, X7R, 10%","C_0603_1608Metric","SMD","C14663","https://jlcpcb.com/partdetail/YAGEO-CC0603KRX7R9BB104/C14663"
+"7","R1,R2,R3,R4","4","YAGEO","RT0603BRD0710KL","10 kohm, 0.1%, 0.1 W, 25 ppm/C thin film","R_0603_1608Metric","SMD","C95204","https://jlcpcb.com/partdetail/YAGEO-RT0603BRD0710KL/C95204"

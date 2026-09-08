@@ -17,3 +17,10 @@ fp-info-cache
 # OS cruft
 .DS_Store
 Thumbs.db
+
+# Per-user KiCad state and generated Python caches
+*.kicad_prl
+__pycache__/
+
+# GPIO Joiner manufacturing build scratch data
+examples/gpiojoiner/hardware/gpiojoiner/manufacturing/revA/checks/

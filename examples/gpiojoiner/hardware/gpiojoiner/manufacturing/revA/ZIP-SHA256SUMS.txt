@@ -1,0 +1,2 @@
+44930f65f13d8e4eaa29c2692b2332ef1df249dfd94615843c1398c0b4f749d3  gpiojoiner-revA-gerbers.zip
+f22decded483bc38dbab229f586294c16a88951edc0c8bb6d77a843f905ce1e2  gpiojoiner-revA-assembly.zip

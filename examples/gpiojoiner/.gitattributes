@@ -1,0 +1,23 @@
+# Keep editable prose/scripts consistent across operating systems.
+* text=auto eol=lf whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Preserve EDA files byte-for-byte so recorded verification hashes stay valid.
+*.kicad_pcb -text
+*.kicad_sch -text
+*.kicad_pro -text
+*.kicad_mod -text
+*.kicad_sym -text
+fp-lib-table -text
+sym-lib-table -text
+hardware/gpiojoiner/manufacturing/revA/** -text
+hardware/gpiojoiner/reports/** -text
+
+# Generated/binary assets should not be line-normalized or expanded in diffs.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.zip binary
+*.step binary
+*.svg -text -diff
+*.dsn -text -diff
+*.ses -text -diff

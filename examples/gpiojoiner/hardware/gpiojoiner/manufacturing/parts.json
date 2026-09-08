@@ -1,0 +1,15 @@
+{
+  "revision": "A",
+  "quantity_for_quote": 5,
+  "parts": [
+    {"refs": ["J1", "J3", "J5", "J6"], "manufacturer": "Sullins Connector Solutions", "mpn": "SFH11-PBPC-D10-RA-BK", "description": "20-position keyed female right-angle connector, 2.54 mm", "package": "ORCA_20_RA", "type": "Through Hole", "lcsc": "C3319874", "source": "https://jlcpcb.com/partdetail/3884468-SFH11_PBPC_D10_RABK/C3319874"},
+    {"refs": ["J2", "J4"], "manufacturer": "Sullins Connector Solutions", "mpn": "SFH11-PBPC-D05-RA-BK", "description": "10-position keyed female right-angle connector, 2.54 mm", "package": "ORCA_10_RA", "type": "Through Hole", "lcsc": "C3322376", "source": "https://jlcpcb.com/partdetail/3886970-SFH11_PBPC_D05_RABK/C3322376"},
+    {"refs": ["SW1"], "manufacturer": "C&K / Littelfuse", "mpn": "JS202011CQN", "description": "DPDT on-on slide switch; verify contact states against drawing", "package": "SW_JS202011CQN", "type": "Through Hole", "lcsc": "C221663", "source": "https://jlcpcb.com/partdetail/CK-JS202011CQN/C221663"},
+    {"refs": ["U1"], "manufacturer": "Microchip Technology", "mpn": "24LC02BT-E/OT", "description": "2-kbit I2C EEPROM; install blank, program during bring-up", "package": "SOT-23-5", "type": "SMD", "lcsc": "C2061350", "source": "https://jlcpcb.com/partdetail/MicrochipTech-24LC02BT_EOT/C2061350"},
+    {"refs": ["D1"], "manufacturer": "Nexperia", "mpn": "BAT54C,215", "description": "Dual Schottky diode, common cathode", "package": "SOT-23", "type": "SMD", "lcsc": "C37704", "source": "https://jlcpcb.com/partdetail/Nexperia-BAT54C215/C37704"},
+    {"refs": ["C1"], "manufacturer": "YAGEO", "mpn": "CC0603KRX7R9BB104", "description": "100 nF, 50 V, X7R, 10%", "package": "C_0603_1608Metric", "type": "SMD", "lcsc": "C14663", "source": "https://jlcpcb.com/partdetail/YAGEO-CC0603KRX7R9BB104/C14663"},
+    {"refs": ["R1", "R2", "R3", "R4"], "manufacturer": "YAGEO", "mpn": "RT0603BRD0710KL", "description": "10 kohm, 0.1%, 0.1 W, 25 ppm/C thin film", "package": "R_0603_1608Metric", "type": "SMD", "lcsc": "C95204", "source": "https://jlcpcb.com/partdetail/YAGEO-RT0603BRD0710KL/C95204"}
+  ],
+  "do_not_populate": ["R5", "R6", "R7", "R8"],
+  "etched_test_pads": ["TP1", "TP2", "TP3", "TP4", "TP5", "TP6"]
+}

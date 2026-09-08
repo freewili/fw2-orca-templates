@@ -1,0 +1,1071 @@
+(kicad_sch (version 20260306) (generator "gpiojoiner") (uuid "ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6") (paper "A3") (title_block (title "GPIO Joiner - two-device GPIO test fixture") (date "2026-09-08") (rev "A")) (lib_symbols (symbol "GPIOJoiner:FW2_20" (pin_names (offset 0.635)) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 0 0) (effects (font (size 1.27 1.27)) ))(property "Value" "FW2_20" (at 0 0 0) (effects (font (size 1.27 1.27)) ))(symbol "FW2_20_0_1" (rectangle (start -17.78 2.54) (end 17.78 -36.83) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "FW2_20_1_1" (pin passive line (at -22.86 0 0) (length 5.08) (name "SPI_CS" (effects (font (size 1.016 1.016)) )) (number "1" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 0 180) (length 5.08) (name "5V_OUT" (effects (font (size 1.016 1.016)) )) (number "2" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -3.81 0) (length 5.08) (name "GPIO27" (effects (font (size 1.016 1.016)) )) (number "3" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -3.81 180) (length 5.08) (name "VREF" (effects (font (size 1.016 1.016)) )) (number "4" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -7.62 0) (length 5.08) (name "UART_RX" (effects (font (size 1.016 1.016)) )) (number "5" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -7.62 180) (length 5.08) (name "3V3_OUT" (effects (font (size 1.016 1.016)) )) (number "6" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -11.43 0) (length 5.08) (name "UART_CTS" (effects (font (size 1.016 1.016)) )) (number "7" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -11.43 180) (length 5.08) (name "I2C0_SCL" (effects (font (size 1.016 1.016)) )) (number "8" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -15.24 0) (length 5.08) (name "UART_TX" (effects (font (size 1.016 1.016)) )) (number "9" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -15.24 180) (length 5.08) (name "I2C0_SDA" (effects (font (size 1.016 1.016)) )) (number "10" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -19.05 0) (length 5.08) (name "UART_RTS" (effects (font (size 1.016 1.016)) )) (number "11" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -19.05 180) (length 5.08) (name "SPI_RX" (effects (font (size 1.016 1.016)) )) (number "12" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -22.86 0) (length 5.08) (name "SPI_TX" (effects (font (size 1.016 1.016)) )) (number "13" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -22.86 180) (length 5.08) (name "GPIO26" (effects (font (size 1.016 1.016)) )) (number "14" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -26.67 0) (length 5.08) (name "SPI_SCLK" (effects (font (size 1.016 1.016)) )) (number "15" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -26.67 180) (length 5.08) (name "CAN_L" (effects (font (size 1.016 1.016)) )) (number "16" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -30.48 0) (length 5.08) (name "GPIO25" (effects (font (size 1.016 1.016)) )) (number "17" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -30.48 180) (length 5.08) (name "CAN_H" (effects (font (size 1.016 1.016)) )) (number "18" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -34.29 0) (length 5.08) (name "GND" (effects (font (size 1.016 1.016)) )) (number "19" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -34.29 180) (length 5.08) (name "GND" (effects (font (size 1.016 1.016)) )) (number "20" (effects (font (size 1.016 1.016)) )))))
+(symbol "GPIOJoiner:OG_20" (pin_names (offset 0.635)) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 0 0) (effects (font (size 1.27 1.27)) ))(property "Value" "OG_20" (at 0 0 0) (effects (font (size 1.27 1.27)) ))(symbol "OG_20_0_1" (rectangle (start -17.78 2.54) (end 17.78 -36.83) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "OG_20_1_1" (pin passive line (at -22.86 0 0) (length 5.08) (name "SPI_CS" (effects (font (size 1.016 1.016)) )) (number "1" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 0 180) (length 5.08) (name "5V_OUT" (effects (font (size 1.016 1.016)) )) (number "2" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -3.81 0) (length 5.08) (name "GPIO27" (effects (font (size 1.016 1.016)) )) (number "3" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -3.81 180) (length 5.08) (name "VREF" (effects (font (size 1.016 1.016)) )) (number "4" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -7.62 0) (length 5.08) (name "UART_RX" (effects (font (size 1.016 1.016)) )) (number "5" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -7.62 180) (length 5.08) (name "3V3_OUT" (effects (font (size 1.016 1.016)) )) (number "6" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -11.43 0) (length 5.08) (name "UART_CTS" (effects (font (size 1.016 1.016)) )) (number "7" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -11.43 180) (length 5.08) (name "I2C0_SCL" (effects (font (size 1.016 1.016)) )) (number "8" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -15.24 0) (length 5.08) (name "UART_TX" (effects (font (size 1.016 1.016)) )) (number "9" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -15.24 180) (length 5.08) (name "I2C0_SDA" (effects (font (size 1.016 1.016)) )) (number "10" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -19.05 0) (length 5.08) (name "UART_RTS" (effects (font (size 1.016 1.016)) )) (number "11" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -19.05 180) (length 5.08) (name "SPI_RX" (effects (font (size 1.016 1.016)) )) (number "12" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -22.86 0) (length 5.08) (name "SPI_TX" (effects (font (size 1.016 1.016)) )) (number "13" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -22.86 180) (length 5.08) (name "GPIO26" (effects (font (size 1.016 1.016)) )) (number "14" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -26.67 0) (length 5.08) (name "SPI_SCLK" (effects (font (size 1.016 1.016)) )) (number "15" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -26.67 180) (length 5.08) (name "SWCLK" (effects (font (size 1.016 1.016)) )) (number "16" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -30.48 0) (length 5.08) (name "GPIO25" (effects (font (size 1.016 1.016)) )) (number "17" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -30.48 180) (length 5.08) (name "SWDIO" (effects (font (size 1.016 1.016)) )) (number "18" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -34.29 0) (length 5.08) (name "GND" (effects (font (size 1.016 1.016)) )) (number "19" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -34.29 180) (length 5.08) (name "GND" (effects (font (size 1.016 1.016)) )) (number "20" (effects (font (size 1.016 1.016)) )))))
+(symbol "GPIOJoiner:FW2_10" (pin_names (offset 0.635)) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 0 0) (effects (font (size 1.27 1.27)) ))(property "Value" "FW2_10" (at 0 0 0) (effects (font (size 1.27 1.27)) ))(symbol "FW2_10_0_1" (rectangle (start -17.78 2.54) (end 17.78 -17.78) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "FW2_10_1_1" (pin passive line (at -22.86 0 0) (length 5.08) (name "GND" (effects (font (size 1.016 1.016)) )) (number "1" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 0 180) (length 5.08) (name "AIN3" (effects (font (size 1.016 1.016)) )) (number "2" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -3.81 0) (length 5.08) (name "AOUT1" (effects (font (size 1.016 1.016)) )) (number "3" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -3.81 180) (length 5.08) (name "AIN2" (effects (font (size 1.016 1.016)) )) (number "4" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -7.62 0) (length 5.08) (name "AOUT0" (effects (font (size 1.016 1.016)) )) (number "5" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -7.62 180) (length 5.08) (name "AIN1" (effects (font (size 1.016 1.016)) )) (number "6" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -11.43 0) (length 5.08) (name "I2C1_SCL" (effects (font (size 1.016 1.016)) )) (number "7" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -11.43 180) (length 5.08) (name "AIN0" (effects (font (size 1.016 1.016)) )) (number "8" (effects (font (size 1.016 1.016)) )))(pin passive line (at -22.86 -15.24 0) (length 5.08) (name "I2C1_SDA" (effects (font (size 1.016 1.016)) )) (number "9" (effects (font (size 1.016 1.016)) )))(pin passive line (at 22.86 -15.24 180) (length 5.08) (name "PROG_VOUT" (effects (font (size 1.016 1.016)) )) (number "10" (effects (font (size 1.016 1.016)) )))))
+(symbol "GPIOJoiner:24LC02BT" (pin_names (offset 0.635)) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 0 0) (effects (font (size 1.27 1.27)) ))(property "Value" "24LC02BT" (at 0 0 0) (effects (font (size 1.27 1.27)) ))(symbol "24LC02BT_0_1" (rectangle (start -10.16 5.08) (end 10.16 -5.08) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "24LC02BT_1_1" (pin input line (at -15.24 2.54 0) (length 5.08) (name "SCL" (effects (font (size 1.016 1.016)) )) (number "1" (effects (font (size 1.016 1.016)) )))(pin bidirectional line (at -15.24 -2.54 0) (length 5.08) (name "SDA" (effects (font (size 1.016 1.016)) )) (number "3" (effects (font (size 1.016 1.016)) )))(pin input line (at 15.24 -2.54 180) (length 5.08) (name "WP" (effects (font (size 1.016 1.016)) )) (number "5" (effects (font (size 1.016 1.016)) )))(pin power_in line (at 0 10.16 270) (length 5.08) (name "VCC" (effects (font (size 1.016 1.016)) )) (number "4" (effects (font (size 1.016 1.016)) )))(pin power_in line (at 0 -10.16 90) (length 5.08) (name "VSS" (effects (font (size 1.016 1.016)) )) (number "2" (effects (font (size 1.016 1.016)) )))))
+(symbol "GPIOJoiner:JS202011CQN" (pin_names (offset 0.635)) (in_bom yes) (on_board yes) (property "Reference" "SW" (at 0 0 0) (effects (font (size 1.27 1.27)) ))(property "Value" "JS202011CQN" (at 0 0 0) (effects (font (size 1.27 1.27)) ))(symbol "JS202011CQN_0_1" (polyline (pts (xy -2.54 5.08)(xy 2.54 7.62)) (stroke (width 0.254) (type default)) (fill (type none)))(polyline (pts (xy -2.54 -5.08)(xy 2.54 -2.54)) (stroke (width 0.254) (type default)) (fill (type none)))(polyline (pts (xy 0 5.08)(xy 0 -5.08)) (stroke (width 0.254) (type dash)) (fill (type none)))) (symbol "JS202011CQN_1_1" (pin passive line (at -7.62 5.08 0) (length 5.08) (name "" (effects (font (size 1.016 1.016)) )) (number "2" (effects (font (size 1.016 1.016)) )))(pin passive line (at 7.62 7.62 180) (length 5.08) (name "" (effects (font (size 1.016 1.016)) )) (number "1" (effects (font (size 1.016 1.016)) )))(pin passive line (at 7.62 2.54 180) (length 5.08) (name "" (effects (font (size 1.016 1.016)) )) (number "3" (effects (font (size 1.016 1.016)) )))(pin passive line (at -7.62 -5.08 0) (length 5.08) (name "" (effects (font (size 1.016 1.016)) )) (number "5" (effects (font (size 1.016 1.016)) )))(pin passive line (at 7.62 -2.54 180) (length 5.08) (name "" (effects (font (size 1.016 1.016)) )) (number "4" (effects (font (size 1.016 1.016)) )))(pin passive line (at 7.62 -7.62 180) (length 5.08) (name "" (effects (font (size 1.016 1.016)) )) (number "6" (effects (font (size 1.016 1.016)) )))))
+(symbol "GPIOJoiner:TestPoint" (pin_names (offset 0.635)) (in_bom yes) (on_board yes) (property "Reference" "TP" (at 0 0 0) (effects (font (size 1.27 1.27)) ))(property "Value" "TestPoint" (at 0 0 0) (effects (font (size 1.27 1.27)) ))(symbol "TestPoint_0_1" (circle (center 0 3.175) (radius 0.635) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.54) (name "" (effects (font (size 1.016 1.016)) )) (number "1" (effects (font (size 1.016 1.016)) )))))
+(symbol "GPIOJoiner:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "GPIOJoiner:C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 0.635 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_0_1"
+			(polyline
+				(pts
+					(xy -2.032 0.762) (xy 2.032 0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.762) (xy 2.032 -0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "C_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "GPIOJoiner:BAT54C"
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "D"
+			(at 0.635 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BAT54C"
+			(at -6.35 3.175 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 1.905 3.175 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "http://www.diodes.com/_files/datasheets/ds11005.pdf"
+			(at -2.032 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "dual schottky barrier diode, common cathode"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "schottky diode common cathode"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "SOT?23*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "BAT54C_0_1"
+			(polyline
+				(pts
+					(xy -3.175 -1.27) (xy -3.175 1.27) (xy -1.27 0) (xy -3.175 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.905 1.27) (xy -1.905 1.016)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.905 0) (xy 1.905 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 1.27) (xy -1.905 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 1.27) (xy -1.27 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 0) (xy -3.81 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 -1.27) (xy -0.635 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.635 -1.27) (xy -0.635 -1.016)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 0 0)
+				(radius 0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.635 -1.27) (xy 0.635 -1.016)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 1.27) (xy 1.27 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 1.27) (xy 1.905 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -1.27) (xy 0.635 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.905 1.27) (xy 1.905 1.016)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.175 -1.27) (xy 3.175 1.27) (xy 1.27 0) (xy 3.175 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.81 0) (xy 1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "BAT54C_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 0 180)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -5.08 90)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "GPIOJoiner:PWR_FLAG"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	))
+(symbol (lib_id "GPIOJoiner:FW2_20") (at 76.2 43.18 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "53b5f67d-83dc-5139-9089-20b49f426abd") (property "Reference" "J1" (at 76.2 35.56 0) (effects (font (size 1.27 1.27)) ))(property "Value" "FW2 A - WEST" (at 76.2 38.1 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "GPIOJoiner:ORCA_20_RA" (at 76.2 43.18 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "https://docs.freewili.com/hardware/pinout/" (at 76.2 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "ab82eb10-7eb3-5f90-a44a-824e839de4b1"))(pin "2" (uuid "6b2cfdfe-8a3d-5b24-8c38-cce3d93d81f4"))(pin "3" (uuid "e367fee2-92de-5253-a49f-5897d56b68e1"))(pin "4" (uuid "d1e44584-72dd-56c7-8b2f-6abc7845091b"))(pin "5" (uuid "9eceaa3b-e992-53f2-b7cc-430061ff35c4"))(pin "6" (uuid "f194d877-04f6-550c-85e0-c398c040fabc"))(pin "7" (uuid "03e1a95d-6f7e-5720-bb25-f7d708bfac4c"))(pin "8" (uuid "ee6f0d5b-8459-5629-bd2d-91eb3a29b050"))(pin "9" (uuid "d6003d12-24fb-593f-88c8-11aa4442eb95"))(pin "10" (uuid "4cb705ab-66b0-5eea-892b-66d368e57ece"))(pin "11" (uuid "ac1528c2-1433-508d-a391-2e90191ad170"))(pin "12" (uuid "04f3ab08-21bb-5f13-b459-711d776b0e8d"))(pin "13" (uuid "cbd90e19-244d-5adf-a75c-90309d7dc564"))(pin "14" (uuid "f4bd2ed8-1365-5e7c-b9dd-ce43d8651c7e"))(pin "15" (uuid "cab2ff17-e06b-5233-84ae-928542e17af3"))(pin "16" (uuid "55a8ccbb-8a5e-5fd2-a661-a6aee8d906af"))(pin "17" (uuid "1fc78ced-600a-5d36-9773-40b28c023637"))(pin "18" (uuid "bf5fbeac-6ca8-5e3d-9db9-c82fbfe9ad44"))(pin "19" (uuid "adfd3303-2a96-52f0-8d97-2d97d29d14a2"))(pin "20" (uuid "9137e2a1-44fc-5d28-a1e2-32f88d022d3c"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "J1") (unit 1)))))
+(wire (pts (xy 53.34 43.18) (xy 48.26 43.18)) (stroke (width 0) (type default)) (uuid "7fb28811-2b9b-5c83-862b-e4605b5021c9"))
+(global_label "SPI_CS" (shape passive) (at 48.26 43.18 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "88b18e53-cfae-560f-9543-0d4c75697bf6") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(no_connect (at 99.06 43.18) (uuid "cd26ce53-0fea-5506-b539-921274fff47b"))
+(wire (pts (xy 53.34 46.99) (xy 48.26 46.99)) (stroke (width 0) (type default)) (uuid "ea14b788-5557-548a-a674-483d2ca0d6aa"))
+(global_label "GPIO_A27_B26" (shape passive) (at 48.26 46.99 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "24bdcbc3-4935-558c-bec6-634113a685b6") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 46.99 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 99.06 46.99) (xy 104.14 46.99)) (stroke (width 0) (type default)) (uuid "0e0012d6-16d3-52d1-815a-d9e38f84d471"))
+(global_label "VREF_A" (shape passive) (at 104.14 46.99 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "b0e7e4e7-84b2-5087-b7c3-6c87b8754cf6") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 104.14 46.99 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 53.34 50.8) (xy 48.26 50.8)) (stroke (width 0) (type default)) (uuid "dbfaef1c-5c5f-58f1-97b3-f9c7574b5107"))
+(global_label "UART_B_TX_A_RX" (shape passive) (at 48.26 50.8 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "6f011282-3a5f-55a8-9b6f-d7268d92d431") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 50.8 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 99.06 50.8) (xy 104.14 50.8)) (stroke (width 0) (type default)) (uuid "fb860edc-d731-5af8-a526-9cada5f2a959"))
+(global_label "FW2_A_3V3" (shape passive) (at 104.14 50.8 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "c2e6e7aa-3c7b-5e2e-93b0-64b95645a294") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 104.14 50.8 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 53.34 54.61) (xy 48.26 54.61)) (stroke (width 0) (type default)) (uuid "d9015b09-9c43-5cb2-a25e-ab47c873978d"))
+(global_label "UART_B_RTS_A_CTS" (shape passive) (at 48.26 54.61 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "027b0a3d-85ab-548e-85d9-378469a16283") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 54.61 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 99.06 54.61) (xy 104.14 54.61)) (stroke (width 0) (type default)) (uuid "314c4e8b-927a-522d-ae9a-6ef7f5fa8a6f"))
+(global_label "I2C0_SCL" (shape passive) (at 104.14 54.61 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "10cc1296-8a6b-5af9-a80a-27c80f38aa94") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 104.14 54.61 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 53.34 58.42) (xy 48.26 58.42)) (stroke (width 0) (type default)) (uuid "d4c3035b-5121-58e8-8ac7-8fe42b6dd5f2"))
+(global_label "UART_A_TX_B_RX" (shape passive) (at 48.26 58.42 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "c1931c4d-414a-51c9-9d9d-53beee1c77ba") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 58.42 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 99.06 58.42) (xy 104.14 58.42)) (stroke (width 0) (type default)) (uuid "ef25c8d0-b381-5a5d-8310-09e3c0188b9f"))
+(global_label "I2C0_SDA" (shape passive) (at 104.14 58.42 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "e278ad77-19f2-5ad5-a6a7-c35bb2ca7e83") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 104.14 58.42 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 53.34 62.23) (xy 48.26 62.23)) (stroke (width 0) (type default)) (uuid "1c9239d4-d6f0-5e1b-9807-0d7352eceba4"))
+(global_label "UART_A_RTS_B_CTS" (shape passive) (at 48.26 62.23 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "e9dfeda5-cb2c-5459-96ab-f39328c6afdc") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 62.23 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 99.06 62.23) (xy 104.14 62.23)) (stroke (width 0) (type default)) (uuid "2f4fd3bb-8eff-5a3f-8ab4-2cdf8c48f456"))
+(global_label "SPI_B_TX_A_RX" (shape passive) (at 104.14 62.23 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "a2d000cc-d91c-526d-b32a-d961fb292764") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 104.14 62.23 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 53.34 66.04) (xy 48.26 66.04)) (stroke (width 0) (type default)) (uuid "6ccb167e-9f27-5442-a1a2-dc46f69b0e96"))
+(global_label "SPI_A_TX_B_RX" (shape passive) (at 48.26 66.04 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "7f3de08e-11d0-5e99-9440-2d358ad605c8") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 66.04 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 99.06 66.04) (xy 104.14 66.04)) (stroke (width 0) (type default)) (uuid "251e4b9d-b9ea-5114-ac42-2100baa9e58f"))
+(global_label "GPIO_B27_A26" (shape passive) (at 104.14 66.04 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "bd10c860-30cc-5f8d-bd7b-91899190ae15") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 104.14 66.04 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 53.34 69.85) (xy 48.26 69.85)) (stroke (width 0) (type default)) (uuid "48220242-0b6d-5bf2-b998-69809587b13a"))
+(global_label "SPI_SCLK" (shape passive) (at 48.26 69.85 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "1491513a-7e49-5f2c-bf5e-c224df131005") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 69.85 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 99.06 69.85) (xy 104.14 69.85)) (stroke (width 0) (type default)) (uuid "ea5ce167-928f-5608-8e25-051354c5337b"))
+(global_label "CAN_L" (shape passive) (at 104.14 69.85 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "f70f7f08-1dfd-5685-8b5a-9766b3109dd4") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 104.14 69.85 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 53.34 73.66) (xy 48.26 73.66)) (stroke (width 0) (type default)) (uuid "3c0d6326-1f58-5e6a-9f48-45306a08cfd2"))
+(global_label "GPIO25_A" (shape passive) (at 48.26 73.66 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "541e3038-470a-582a-b21e-316cd207a879") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 73.66 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 99.06 73.66) (xy 104.14 73.66)) (stroke (width 0) (type default)) (uuid "30a95c5e-0254-54a6-af79-726c5b066ef1"))
+(global_label "CAN_H" (shape passive) (at 104.14 73.66 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "51ba9e80-f421-5db4-b813-99db8f0a6a08") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 104.14 73.66 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 53.34 77.47) (xy 48.26 77.47)) (stroke (width 0) (type default)) (uuid "6c5709d4-05bb-5685-abd8-fe7faea558a4"))
+(global_label "GND" (shape passive) (at 48.26 77.47 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "1f9ee713-2100-5ae0-841e-792a1d506f91") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 77.47 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 99.06 77.47) (xy 104.14 77.47)) (stroke (width 0) (type default)) (uuid "6f3f0fbb-b8d2-504c-bc19-1b439e741474"))
+(global_label "GND" (shape passive) (at 104.14 77.47 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "821af7a0-bcb0-59b1-8de9-cd288c7b0e0b") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 104.14 77.47 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:OG_20") (at 76.2 96.52 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "3684d234-5113-50ad-86a2-8926007f6c72") (property "Reference" "J5" (at 76.2 88.9 0) (effects (font (size 1.27 1.27)) ))(property "Value" "OG A - NORTH" (at 76.2 91.44 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "GPIOJoiner:ORCA_20_RA" (at 76.2 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "https://docs.freewili.com/hardware/pinout/" (at 76.2 96.52 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "f4b8613f-cad7-528d-8e36-8dfd523cbb9a"))(pin "2" (uuid "2d66a88c-e0ce-56ac-86ec-def576412789"))(pin "3" (uuid "83043791-1280-5289-a960-42c62081b103"))(pin "4" (uuid "91a1b8b8-37ff-50f4-928d-26265e85d4da"))(pin "5" (uuid "fca0fd05-d465-515d-8b27-ebc7d3a7534b"))(pin "6" (uuid "b4074a9a-2822-546e-a866-67e76faf44fd"))(pin "7" (uuid "c1235b44-c3fa-5004-a572-cc78966d0e37"))(pin "8" (uuid "2040b0fe-59a7-5d0d-976b-c07fac100d86"))(pin "9" (uuid "b81c0304-45f1-5efe-94e1-479c94899c6a"))(pin "10" (uuid "66e1051b-f546-5559-ba98-983befe05cf6"))(pin "11" (uuid "5be0cc0a-bbb5-5358-b8cc-6d9a922af592"))(pin "12" (uuid "1089cfb0-9516-5f72-ba69-4506f65cd317"))(pin "13" (uuid "331904eb-a3d8-5fe4-b486-6c3ae342f14e"))(pin "14" (uuid "a17a05ec-ebcf-51a4-a58e-b5aadc263a37"))(pin "15" (uuid "e4fd110c-6d3b-5a79-a44c-258a3bc8975e"))(pin "16" (uuid "738582ce-c80d-5eca-889f-dcaa1fd6f1cb"))(pin "17" (uuid "fb263ad3-4f35-51b9-b235-a769a5dcf3e4"))(pin "18" (uuid "e999737e-45cc-56fd-9683-95c420a5e2fe"))(pin "19" (uuid "3f0369b8-e296-57b9-b54a-db67b0e20660"))(pin "20" (uuid "16b91984-960d-518a-9574-13b5c90676c7"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "J5") (unit 1)))))
+(wire (pts (xy 53.34 96.52) (xy 48.26 96.52)) (stroke (width 0) (type default)) (uuid "64263911-02a6-53a5-92be-92752b4915af"))
+(global_label "SPI_CS" (shape passive) (at 48.26 96.52 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "3a086801-bc6b-58f8-ad1f-83749de792cf") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 96.52 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(no_connect (at 99.06 96.52) (uuid "dbcb0fe0-4187-5677-8130-5e6226116477"))
+(wire (pts (xy 53.34 100.33) (xy 48.26 100.33)) (stroke (width 0) (type default)) (uuid "c7de28a5-eea6-5c41-bd93-5368555d8973"))
+(global_label "GPIO_A27_B26" (shape passive) (at 48.26 100.33 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "e57b0d44-bc73-5df7-9f42-1a7a9c3b2c92") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 99.06 100.33) (xy 104.14 100.33)) (stroke (width 0) (type default)) (uuid "9d9e115e-0f7a-5b00-8f98-5f630f2a2bd1"))
+(global_label "VREF_A" (shape passive) (at 104.14 100.33 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "a8a47f99-6805-5b54-aeda-7c6e3520798a") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 104.14 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 53.34 104.14) (xy 48.26 104.14)) (stroke (width 0) (type default)) (uuid "75d6957b-3c99-56f1-8eed-6f199d811a76"))
+(global_label "UART_B_TX_A_RX" (shape passive) (at 48.26 104.14 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "87472ae0-b4e1-54b0-8e1d-2aaf63c3f90e") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 99.06 104.14) (xy 104.14 104.14)) (stroke (width 0) (type default)) (uuid "eaf5d0e7-db7e-5385-8c62-f2ac19b9f0d8"))
+(global_label "OG_A_3V3" (shape passive) (at 104.14 104.14 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "1bc10ab7-8cbc-5098-9c30-99bde16c7383") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 104.14 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 53.34 107.95) (xy 48.26 107.95)) (stroke (width 0) (type default)) (uuid "d2355575-0830-54bd-8b5c-f80c29982f64"))
+(global_label "UART_B_RTS_A_CTS" (shape passive) (at 48.26 107.95 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "799e5fb7-e83f-5497-a767-5a98253d9b60") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 107.95 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 99.06 107.95) (xy 104.14 107.95)) (stroke (width 0) (type default)) (uuid "3ef290ae-53f5-5fa3-94bf-0549dbb24466"))
+(global_label "I2C0_SCL" (shape passive) (at 104.14 107.95 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "a705d0a3-0827-5730-bd0d-28dc5ac1805e") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 104.14 107.95 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 53.34 111.76) (xy 48.26 111.76)) (stroke (width 0) (type default)) (uuid "e20d47a6-a844-581c-8b97-1d1cd506f667"))
+(global_label "UART_A_TX_B_RX" (shape passive) (at 48.26 111.76 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "8ce9dfcb-7df4-5ef8-adc4-273c4f082d62") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 111.76 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 99.06 111.76) (xy 104.14 111.76)) (stroke (width 0) (type default)) (uuid "1525af4c-c2bf-5a8f-ac58-252e615c5f1f"))
+(global_label "I2C0_SDA" (shape passive) (at 104.14 111.76 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "3ba97304-b08f-5318-b114-6a4f43b90f8f") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 104.14 111.76 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 53.34 115.57) (xy 48.26 115.57)) (stroke (width 0) (type default)) (uuid "cbb4f6d3-7aad-50b4-b662-01ea599da8de"))
+(global_label "UART_A_RTS_B_CTS" (shape passive) (at 48.26 115.57 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "e5b8fb0e-227d-522b-a453-b58c17a3edbd") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 115.57 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 99.06 115.57) (xy 104.14 115.57)) (stroke (width 0) (type default)) (uuid "a8899330-826d-5c52-9a53-1f2ddd5636f9"))
+(global_label "SPI_B_TX_A_RX" (shape passive) (at 104.14 115.57 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "78589afc-5377-5844-8d1a-5d6f58b7f2b1") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 104.14 115.57 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 53.34 119.38) (xy 48.26 119.38)) (stroke (width 0) (type default)) (uuid "f5633a91-0f6f-5086-834d-cf4608c85322"))
+(global_label "SPI_A_TX_B_RX" (shape passive) (at 48.26 119.38 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "fa1a7c41-5cdc-505b-ae88-4aa9a177d219") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 119.38 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 99.06 119.38) (xy 104.14 119.38)) (stroke (width 0) (type default)) (uuid "132d106b-fec4-56e2-acf0-30537cf3fc36"))
+(global_label "GPIO_B27_A26" (shape passive) (at 104.14 119.38 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "741c246a-2d4e-5731-b05a-f5bbf4a4e82f") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 104.14 119.38 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 53.34 123.19) (xy 48.26 123.19)) (stroke (width 0) (type default)) (uuid "b7c6ad8b-067c-513a-9a09-22c865d56735"))
+(global_label "SPI_SCLK" (shape passive) (at 48.26 123.19 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "23277983-d1b5-5ce7-84d7-da1041bd9a75") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 123.19 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(no_connect (at 99.06 123.19) (uuid "d4db8c2b-c292-57b1-94bc-803955e8fcd4"))
+(wire (pts (xy 53.34 127) (xy 48.26 127)) (stroke (width 0) (type default)) (uuid "b8dfd2d5-89ae-52ad-a9fc-906058fd237a"))
+(global_label "GPIO25_A" (shape passive) (at 48.26 127 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "7402ca9b-8278-57e6-a382-8f1ab0b9c91f") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 127 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(no_connect (at 99.06 127) (uuid "e85251c6-3075-5e84-b6d7-5f4145fa8fa5"))
+(wire (pts (xy 53.34 130.81) (xy 48.26 130.81)) (stroke (width 0) (type default)) (uuid "4bf4ed67-53a5-59ee-adc1-c80ea5014af0"))
+(global_label "GND" (shape passive) (at 48.26 130.81 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "9e9af88c-1b0c-56f4-b5fa-eaec41c162a1") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 130.81 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 99.06 130.81) (xy 104.14 130.81)) (stroke (width 0) (type default)) (uuid "539ff02c-37d6-525e-ae76-ee89ee8e3fdc"))
+(global_label "GND" (shape passive) (at 104.14 130.81 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "6565ee10-2857-5da1-81e8-c8cd24ad8a72") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 104.14 130.81 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:FW2_10") (at 76.2 149.86 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "415c4b2a-4e88-5b36-8aaf-fdceb68e4fca") (property "Reference" "J2" (at 76.2 142.24 0) (effects (font (size 1.27 1.27)) ))(property "Value" "FW2 A - ANALOG / I2C1" (at 76.2 144.78 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "GPIOJoiner:ORCA_10_RA" (at 76.2 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "https://docs.freewili.com/hardware/pinout/" (at 76.2 149.86 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "f06d986e-9765-58bd-becf-197ac7fed29c"))(pin "2" (uuid "130024b5-54a7-5daf-93a9-2f3025d56f73"))(pin "3" (uuid "de88ffb8-2fa5-5a12-8e39-db0ef8c5e82d"))(pin "4" (uuid "b07063a0-4360-50ac-a980-a19dbfd935a4"))(pin "5" (uuid "0b5390ac-a2c5-53e2-a407-f5d01e8432e9"))(pin "6" (uuid "b5bbee54-25c9-5bf1-94d8-8849df533bdd"))(pin "7" (uuid "373f8ccd-b2d1-5ff5-bb13-06d6a1e55ab9"))(pin "8" (uuid "0b1acefa-ab47-5b6d-a99e-340405c8aa09"))(pin "9" (uuid "2e9bb192-d8c0-5c1c-a28b-d84120e23972"))(pin "10" (uuid "340cf936-57a5-556f-b61b-32a165c753f9"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "J2") (unit 1)))))
+(wire (pts (xy 53.34 149.86) (xy 48.26 149.86)) (stroke (width 0) (type default)) (uuid "e4062c4b-2384-5323-ab08-4a26e4c650c4"))
+(global_label "GND" (shape passive) (at 48.26 149.86 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "44351e7c-c254-520d-ae07-4f8868428847") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 149.86 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 99.06 149.86) (xy 104.14 149.86)) (stroke (width 0) (type default)) (uuid "7d6e6672-4e96-503a-a251-c610cc3e57f0"))
+(global_label "AIN3_A" (shape passive) (at 104.14 149.86 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "cf2af054-db37-5ef1-8079-7ee611b61129") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 104.14 149.86 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 53.34 153.67) (xy 48.26 153.67)) (stroke (width 0) (type default)) (uuid "6dd3f8c6-5dca-59c5-86f0-1d15fef57981"))
+(global_label "A_AOUT1_B_AIN1" (shape passive) (at 48.26 153.67 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "9c872dcd-3c3a-59b5-ad73-6591bec4cbad") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 153.67 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 99.06 153.67) (xy 104.14 153.67)) (stroke (width 0) (type default)) (uuid "1c5c479b-fa13-50e1-abab-bca4297c39fb"))
+(global_label "B_VOUT_HALF" (shape passive) (at 104.14 153.67 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "a3148e9f-bc04-539c-badf-ec3c0030b123") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 104.14 153.67 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 53.34 157.48) (xy 48.26 157.48)) (stroke (width 0) (type default)) (uuid "9772f578-237c-5d6c-b77a-84baeeb2e770"))
+(global_label "A_AOUT0_B_AIN0" (shape passive) (at 48.26 157.48 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "93affc70-225a-5725-857e-1bcbf49424e9") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 157.48 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 99.06 157.48) (xy 104.14 157.48)) (stroke (width 0) (type default)) (uuid "aa5869cd-7d34-50b3-a07a-6290f1bb210b"))
+(global_label "B_AOUT1_A_AIN1" (shape passive) (at 104.14 157.48 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "985449ab-b698-5d1a-96b8-2be5961808c2") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 104.14 157.48 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 53.34 161.29) (xy 48.26 161.29)) (stroke (width 0) (type default)) (uuid "de4a04cd-03b8-56c6-81f3-b51debf4470f"))
+(global_label "I2C1_SCL" (shape passive) (at 48.26 161.29 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "9e673662-649a-5b38-a3fd-16168722ff74") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 161.29 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 99.06 161.29) (xy 104.14 161.29)) (stroke (width 0) (type default)) (uuid "fa9e99d2-f39c-5df4-9bd2-745cb2c0ec96"))
+(global_label "B_AOUT0_A_AIN0" (shape passive) (at 104.14 161.29 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "944bce87-7cbb-55ec-b0ea-895c8b401acf") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 104.14 161.29 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 53.34 165.1) (xy 48.26 165.1)) (stroke (width 0) (type default)) (uuid "82ef52da-efd4-5a5f-8d7d-f06834d6d47f"))
+(global_label "I2C1_SDA" (shape passive) (at 48.26 165.1 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "a67327e2-ea13-5240-ad27-70e0f039e125") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 99.06 165.1) (xy 104.14 165.1)) (stroke (width 0) (type default)) (uuid "e324a1e1-af29-5573-8485-a9b031371fc0"))
+(global_label "PROG_VOUT_A" (shape passive) (at 104.14 165.1 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "95f0c902-4ae6-521d-b9b0-da583cc7c641") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 104.14 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:FW2_20") (at 208.28 43.18 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "e235d3cc-4c26-5bf0-b173-4000fd4c6001") (property "Reference" "J3" (at 208.28 35.56 0) (effects (font (size 1.27 1.27)) ))(property "Value" "FW2 B - EAST" (at 208.28 38.1 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "GPIOJoiner:ORCA_20_RA" (at 208.28 43.18 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "https://docs.freewili.com/hardware/pinout/" (at 208.28 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "b73fafb2-4030-57c6-b5a5-a0e7b419d824"))(pin "2" (uuid "6ee8a68b-43e1-5c3f-a8ab-7c102ec228aa"))(pin "3" (uuid "b6291352-44a0-5e90-be74-430e13028bb6"))(pin "4" (uuid "5390587d-bb2d-54e8-8384-c9cbb3fb8d25"))(pin "5" (uuid "86bc9389-0c7f-58a7-b26b-0af68f41364a"))(pin "6" (uuid "ebed8ae7-b6fe-5a00-be9f-9d7509682fee"))(pin "7" (uuid "b8ee7ebc-630a-5f01-89a7-b778c22e4174"))(pin "8" (uuid "7044e62c-513a-5339-8b75-3f85fa09a7f2"))(pin "9" (uuid "facb3454-2fbe-545d-8a67-8ca482466bcd"))(pin "10" (uuid "4caef0f0-0be1-500a-befa-5d08c4c79cd5"))(pin "11" (uuid "310a9f55-172a-5fa8-a8fc-fceabd2bdbea"))(pin "12" (uuid "3d3bbcf3-8876-57cf-85fc-903e4c96f2eb"))(pin "13" (uuid "9ff49304-de9b-5fda-8c1b-e178b70f4d98"))(pin "14" (uuid "cbd2ee7e-1d06-5a59-adbd-c561a9ded9be"))(pin "15" (uuid "3c53db6e-97f6-59cc-ac79-6c9cd47c8a4e"))(pin "16" (uuid "9e94bdc6-3d10-542b-b5c2-1396e8101e8e"))(pin "17" (uuid "a7d4bc3b-f1a3-584e-8bfe-2b59485623e5"))(pin "18" (uuid "91d78129-fd07-5918-b1f1-1554cdb43d24"))(pin "19" (uuid "a7086cc7-1576-5240-b2b6-5094ac926d1a"))(pin "20" (uuid "dfaad247-d6a1-546c-bee7-d940bd41f836"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "J3") (unit 1)))))
+(wire (pts (xy 185.42 43.18) (xy 180.34 43.18)) (stroke (width 0) (type default)) (uuid "e8714d09-0a32-53d0-9494-610446e8eb66"))
+(global_label "SPI_CS" (shape passive) (at 180.34 43.18 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "06471872-e741-5beb-80d8-15c66bbf0d15") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(no_connect (at 231.14 43.18) (uuid "cb020939-59a2-5520-a55d-434291f942d8"))
+(wire (pts (xy 185.42 46.99) (xy 180.34 46.99)) (stroke (width 0) (type default)) (uuid "bb198bcf-e596-5e25-b4dc-794e330b9c34"))
+(global_label "GPIO_B27_A26" (shape passive) (at 180.34 46.99 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "c4e5af59-24f3-594c-a17d-1196f40f32a8") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 46.99 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 231.14 46.99) (xy 236.22 46.99)) (stroke (width 0) (type default)) (uuid "6e8911f0-e9b7-53d2-b0f6-f73e7f095df6"))
+(global_label "VREF_B" (shape passive) (at 236.22 46.99 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "a035a506-e1bb-5df9-a6ce-a6cd1f3b1f02") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 46.99 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 185.42 50.8) (xy 180.34 50.8)) (stroke (width 0) (type default)) (uuid "5b620805-5b17-57c4-b1ce-504ad8a4e3a6"))
+(global_label "UART_A_TX_B_RX" (shape passive) (at 180.34 50.8 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "953d7819-361d-5231-8bdd-48deac055ee2") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 50.8 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 231.14 50.8) (xy 236.22 50.8)) (stroke (width 0) (type default)) (uuid "1fb9ed72-7327-5273-828c-47f5964a2c01"))
+(global_label "FW2_B_3V3" (shape passive) (at 236.22 50.8 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "7d5bc8ef-e5ee-5ebf-a8e4-c86449cdf776") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 50.8 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 185.42 54.61) (xy 180.34 54.61)) (stroke (width 0) (type default)) (uuid "2bac4c4d-ef0c-51ed-88a5-03ff5e138692"))
+(global_label "UART_A_RTS_B_CTS" (shape passive) (at 180.34 54.61 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "6c9d2591-e095-5557-9f01-f5162d1f8b8e") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 54.61 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 231.14 54.61) (xy 236.22 54.61)) (stroke (width 0) (type default)) (uuid "92d0851d-6399-5b6d-8df0-a480f8a2112a"))
+(global_label "I2C0_SCL" (shape passive) (at 236.22 54.61 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "dcbdb9b0-cbee-5bc7-9cc0-872fc0483632") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 54.61 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 185.42 58.42) (xy 180.34 58.42)) (stroke (width 0) (type default)) (uuid "645586ce-49e6-56b6-b6ab-8908d54bdbac"))
+(global_label "UART_B_TX_A_RX" (shape passive) (at 180.34 58.42 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "5a2c3a0b-77e3-5582-ae48-57463731fc51") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 58.42 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 231.14 58.42) (xy 236.22 58.42)) (stroke (width 0) (type default)) (uuid "3670ae39-0a76-58ab-b481-c0387f0548fa"))
+(global_label "I2C0_SDA" (shape passive) (at 236.22 58.42 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "3e09acf9-5781-52d4-b3cd-8562d6985b62") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 58.42 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 185.42 62.23) (xy 180.34 62.23)) (stroke (width 0) (type default)) (uuid "a38c5b76-d15c-576b-88e5-a2fa1c6fbb24"))
+(global_label "UART_B_RTS_A_CTS" (shape passive) (at 180.34 62.23 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "b240013d-1f6f-57c1-910c-e84f3a623dd8") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 62.23 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 231.14 62.23) (xy 236.22 62.23)) (stroke (width 0) (type default)) (uuid "d5e326f6-9f10-53b5-91f7-c818156035a2"))
+(global_label "SPI_A_TX_B_RX" (shape passive) (at 236.22 62.23 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "4aedabf9-4830-5446-a74e-736f60a055e2") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 62.23 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 185.42 66.04) (xy 180.34 66.04)) (stroke (width 0) (type default)) (uuid "02665fa1-e042-54a1-b86d-84a499703f98"))
+(global_label "SPI_B_TX_A_RX" (shape passive) (at 180.34 66.04 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "4190fd9c-f602-506d-8af4-115be315a1db") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 66.04 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 231.14 66.04) (xy 236.22 66.04)) (stroke (width 0) (type default)) (uuid "62459495-c38c-5375-bb44-5be7444bf9a5"))
+(global_label "GPIO_A27_B26" (shape passive) (at 236.22 66.04 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "e143e860-0ebd-5db8-94e8-0d863812a42b") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 66.04 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 185.42 69.85) (xy 180.34 69.85)) (stroke (width 0) (type default)) (uuid "6c4e7892-01aa-56ea-a305-fb66e89a29ff"))
+(global_label "SPI_SCLK" (shape passive) (at 180.34 69.85 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "c399acba-fe66-520a-8228-94cdefd0bdd8") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 69.85 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 231.14 69.85) (xy 236.22 69.85)) (stroke (width 0) (type default)) (uuid "9d183fd1-5789-59d5-906a-bef18047ef5e"))
+(global_label "CAN_L" (shape passive) (at 236.22 69.85 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "6e3158e5-0dba-568e-a9c1-9b08c5978254") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 69.85 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 185.42 73.66) (xy 180.34 73.66)) (stroke (width 0) (type default)) (uuid "cec9d273-408b-5588-892d-cbd3f519274f"))
+(global_label "GPIO25_B" (shape passive) (at 180.34 73.66 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "09b4c0e2-2e82-5efb-b0d5-48a9229b0161") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 73.66 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 231.14 73.66) (xy 236.22 73.66)) (stroke (width 0) (type default)) (uuid "f73ad13b-db24-5d11-9d7d-c58386f4ac50"))
+(global_label "CAN_H" (shape passive) (at 236.22 73.66 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "79f22f58-ab5d-52fd-9a28-d0786fb0d26b") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 73.66 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 185.42 77.47) (xy 180.34 77.47)) (stroke (width 0) (type default)) (uuid "506aba54-52cd-5b69-881b-5e6b7025a0a9"))
+(global_label "GND" (shape passive) (at 180.34 77.47 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "0d5d663c-adb2-5c4f-b544-d134790594db") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 77.47 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 231.14 77.47) (xy 236.22 77.47)) (stroke (width 0) (type default)) (uuid "4351996a-afdd-5fac-a743-227835aa232f"))
+(global_label "GND" (shape passive) (at 236.22 77.47 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "2b60d8c6-44d6-5737-baa7-208a7adc6211") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 77.47 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:OG_20") (at 208.28 96.52 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "29e69783-bceb-5b1c-9bb7-4122bcf51814") (property "Reference" "J6" (at 208.28 88.9 0) (effects (font (size 1.27 1.27)) ))(property "Value" "OG B - SOUTH" (at 208.28 91.44 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "GPIOJoiner:ORCA_20_RA" (at 208.28 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "https://docs.freewili.com/hardware/pinout/" (at 208.28 96.52 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "75d366eb-0549-548c-b21a-248a37603d43"))(pin "2" (uuid "585d09e2-931d-53e9-8de8-847c07c0c454"))(pin "3" (uuid "f0772ffd-a703-5173-bd3f-8170eaf865c9"))(pin "4" (uuid "f123e6f5-e103-59b4-8e7f-6c9f3ae0e7f9"))(pin "5" (uuid "bb69816c-5c6b-5c7b-ac91-6c3170d935dd"))(pin "6" (uuid "9832f75d-8ea0-56df-b0d5-55455e3a9f29"))(pin "7" (uuid "72aacecd-df86-5747-9d6a-cc890afd6f25"))(pin "8" (uuid "b4749f8a-dcbf-58fa-ad2a-32af0bdc61f9"))(pin "9" (uuid "92bd8852-0e7f-5b51-8d6d-0df74ee6d2f6"))(pin "10" (uuid "1cefc20d-a18a-53dd-8e81-362899c0117f"))(pin "11" (uuid "bf432db8-9709-5f29-b271-c69800a4941b"))(pin "12" (uuid "795d0238-8a1d-5fea-82ba-8c2de9522d0e"))(pin "13" (uuid "d51def67-75ea-5920-ad67-728b04637475"))(pin "14" (uuid "34722960-a2c9-59e9-be62-b47c034d7f6e"))(pin "15" (uuid "cfa75f62-85ca-5cbe-8f6f-8a8659e2478e"))(pin "16" (uuid "b545583e-97bf-5350-944d-e376b9ecc9d7"))(pin "17" (uuid "87265d19-be1b-5198-b025-7aa15d983823"))(pin "18" (uuid "6486d7f1-4e0c-5d34-a24f-a9b97fb413cd"))(pin "19" (uuid "555e17a1-f52b-5059-ac29-15809c7a2ef1"))(pin "20" (uuid "0d5d0c11-65f3-5c24-8ad3-2a33916bc68a"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "J6") (unit 1)))))
+(wire (pts (xy 185.42 96.52) (xy 180.34 96.52)) (stroke (width 0) (type default)) (uuid "22352083-4fca-5c41-93c5-69b798e855b9"))
+(global_label "SPI_CS" (shape passive) (at 180.34 96.52 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "d38bdc01-ed9b-5436-b8c3-e69e4ba04518") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 96.52 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(no_connect (at 231.14 96.52) (uuid "9bae52f1-f293-5c20-8a10-906c3e2f67ca"))
+(wire (pts (xy 185.42 100.33) (xy 180.34 100.33)) (stroke (width 0) (type default)) (uuid "7d6b9179-fb07-5560-b454-86f97451c5de"))
+(global_label "GPIO_B27_A26" (shape passive) (at 180.34 100.33 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "2c6e57b9-daa6-5608-a8fe-17bdebffdb1d") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 231.14 100.33) (xy 236.22 100.33)) (stroke (width 0) (type default)) (uuid "a4a2bd23-43ef-5cb8-8848-df55f82d2593"))
+(global_label "VREF_B" (shape passive) (at 236.22 100.33 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "8d313311-3e07-50ff-ad8a-12ef61c8c6be") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 185.42 104.14) (xy 180.34 104.14)) (stroke (width 0) (type default)) (uuid "27cdbd6a-3d89-5fe8-843d-3cebf8796e55"))
+(global_label "UART_A_TX_B_RX" (shape passive) (at 180.34 104.14 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "da584677-3f55-5800-9608-b63a24297662") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 231.14 104.14) (xy 236.22 104.14)) (stroke (width 0) (type default)) (uuid "6a99ffa9-eddb-5f24-bf06-13959b10dce6"))
+(global_label "OG_B_3V3" (shape passive) (at 236.22 104.14 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "346fafa9-b5aa-5350-bcde-141b52d1469f") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 185.42 107.95) (xy 180.34 107.95)) (stroke (width 0) (type default)) (uuid "c27ccff5-b99f-5994-a92c-68c877a642fc"))
+(global_label "UART_A_RTS_B_CTS" (shape passive) (at 180.34 107.95 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "b2a62ca3-555a-5042-94fe-28ee3ef4611f") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 107.95 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 231.14 107.95) (xy 236.22 107.95)) (stroke (width 0) (type default)) (uuid "2a3c5693-c06a-5921-8499-e09f6dae8acf"))
+(global_label "I2C0_SCL" (shape passive) (at 236.22 107.95 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "bf9f1de5-ab77-538f-b512-3aaf6b1907fa") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 107.95 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 185.42 111.76) (xy 180.34 111.76)) (stroke (width 0) (type default)) (uuid "3801f506-d9e2-5eca-8969-58d75e0471c2"))
+(global_label "UART_B_TX_A_RX" (shape passive) (at 180.34 111.76 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "203af9cc-593e-584b-91b5-a936e33aab37") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 111.76 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 231.14 111.76) (xy 236.22 111.76)) (stroke (width 0) (type default)) (uuid "aade01e9-da8b-5cc4-868e-6ef80d262e77"))
+(global_label "I2C0_SDA" (shape passive) (at 236.22 111.76 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "5b8b6374-8546-5665-86f7-97fa41ef77c2") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 111.76 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 185.42 115.57) (xy 180.34 115.57)) (stroke (width 0) (type default)) (uuid "36315d68-a853-54e0-a69d-d802b4667380"))
+(global_label "UART_B_RTS_A_CTS" (shape passive) (at 180.34 115.57 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "d541916a-61db-5c94-a37e-130c4e6eb56f") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 115.57 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 231.14 115.57) (xy 236.22 115.57)) (stroke (width 0) (type default)) (uuid "1cc33cee-4381-5207-886b-4d5e2ac4b488"))
+(global_label "SPI_A_TX_B_RX" (shape passive) (at 236.22 115.57 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "c96cc9cd-d09b-5043-bf06-65696612b82c") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 115.57 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 185.42 119.38) (xy 180.34 119.38)) (stroke (width 0) (type default)) (uuid "92262dab-bab3-556a-bad4-263e15bc4607"))
+(global_label "SPI_B_TX_A_RX" (shape passive) (at 180.34 119.38 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "fee5a163-1fe9-5bd0-944e-0da2a0804a8b") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 119.38 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 231.14 119.38) (xy 236.22 119.38)) (stroke (width 0) (type default)) (uuid "cac35888-f24d-53e2-b324-4aca723c7adc"))
+(global_label "GPIO_A27_B26" (shape passive) (at 236.22 119.38 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "104dca6e-f386-51d7-8c35-2e19b47b2e0e") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 119.38 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 185.42 123.19) (xy 180.34 123.19)) (stroke (width 0) (type default)) (uuid "3f4d4047-a5df-587d-91bc-ce2e9c55bfbc"))
+(global_label "SPI_SCLK" (shape passive) (at 180.34 123.19 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "ec4935a0-1db1-584c-a8ec-440fc49d8a5e") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 123.19 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(no_connect (at 231.14 123.19) (uuid "54c548f0-07ff-5dae-b952-db77c62f285b"))
+(wire (pts (xy 185.42 127) (xy 180.34 127)) (stroke (width 0) (type default)) (uuid "026457a1-30cd-59c0-b7cb-9df80c667ac9"))
+(global_label "GPIO25_B" (shape passive) (at 180.34 127 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "1936127c-d000-5cb8-8c6b-dc1421c69ae4") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 127 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(no_connect (at 231.14 127) (uuid "76401421-9c39-5e3b-b1af-ee540b81b1bb"))
+(wire (pts (xy 185.42 130.81) (xy 180.34 130.81)) (stroke (width 0) (type default)) (uuid "6e861aa3-b987-5f66-b08a-f085d177431f"))
+(global_label "GND" (shape passive) (at 180.34 130.81 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "eb2ef49b-c5cb-5963-98d8-a2441e1e8b6f") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 130.81 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 231.14 130.81) (xy 236.22 130.81)) (stroke (width 0) (type default)) (uuid "24cff0dd-374c-5787-803f-d0bb099ae82e"))
+(global_label "GND" (shape passive) (at 236.22 130.81 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "03c9d520-c2f5-5001-95a2-6d29b1a9dcf6") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 130.81 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:FW2_10") (at 208.28 149.86 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "6e3889d2-7338-5a8d-8c16-beaedf2c9edf") (property "Reference" "J4" (at 208.28 142.24 0) (effects (font (size 1.27 1.27)) ))(property "Value" "FW2 B - ANALOG / I2C1" (at 208.28 144.78 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "GPIOJoiner:ORCA_10_RA" (at 208.28 149.86 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "https://docs.freewili.com/hardware/pinout/" (at 208.28 149.86 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "1aae08d8-c1d2-5b8d-80a5-5a1d2b470152"))(pin "2" (uuid "1956f2c3-d7f2-537f-9739-d8afd56ed899"))(pin "3" (uuid "701ad677-ea9f-5ac7-90af-a5d6fbd522e8"))(pin "4" (uuid "6a4a38ad-d517-590b-9dff-ae5bd7ad49a2"))(pin "5" (uuid "b1d2242e-6b9b-54a3-8e6c-301bb7ef2d7a"))(pin "6" (uuid "ac32f612-5c8b-525c-af5c-1aa466b49853"))(pin "7" (uuid "77da9b39-fd4e-5371-a9c5-b4e5bb621fa8"))(pin "8" (uuid "f46b687c-4f80-5193-829a-42e12b85cda7"))(pin "9" (uuid "653e3061-ede9-5f0e-9b81-014b21cc4de4"))(pin "10" (uuid "9c6f0463-b5a2-5af1-813e-072e74edafe2"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "J4") (unit 1)))))
+(wire (pts (xy 185.42 149.86) (xy 180.34 149.86)) (stroke (width 0) (type default)) (uuid "38311cf2-2539-5b96-86f4-ae6beb4e207a"))
+(global_label "GND" (shape passive) (at 180.34 149.86 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "f6f07897-0313-55ac-bc8f-280f8f6cbd0f") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 149.86 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 231.14 149.86) (xy 236.22 149.86)) (stroke (width 0) (type default)) (uuid "f1773993-d0bc-5f24-8af8-84816ba8f1fa"))
+(global_label "AIN3_B" (shape passive) (at 236.22 149.86 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "f21fe3e2-00b1-5e50-9010-f564ba11c174") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 149.86 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 185.42 153.67) (xy 180.34 153.67)) (stroke (width 0) (type default)) (uuid "b3a18cd5-0793-5d22-b0f1-6a7fdf679546"))
+(global_label "B_AOUT1_A_AIN1" (shape passive) (at 180.34 153.67 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "6d6f2a30-7a67-524f-b757-5be87229d60a") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 153.67 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 231.14 153.67) (xy 236.22 153.67)) (stroke (width 0) (type default)) (uuid "daf42d7a-edc2-537c-ba7a-14dd5fdc0dd4"))
+(global_label "A_VOUT_HALF" (shape passive) (at 236.22 153.67 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "3e9fa412-13ee-5320-9683-1e37518d865a") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 153.67 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 185.42 157.48) (xy 180.34 157.48)) (stroke (width 0) (type default)) (uuid "9eee9972-571a-56e4-a053-a3893d76c31b"))
+(global_label "B_AOUT0_A_AIN0" (shape passive) (at 180.34 157.48 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "8f388c28-4bcf-5a2d-a302-027613a78f1d") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 157.48 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 231.14 157.48) (xy 236.22 157.48)) (stroke (width 0) (type default)) (uuid "602b78c6-87e0-5e73-9758-e2cf1f740cd6"))
+(global_label "A_AOUT1_B_AIN1" (shape passive) (at 236.22 157.48 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "59c3e2d8-d5da-5b81-b6b5-9ffe202bbfbd") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 157.48 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 185.42 161.29) (xy 180.34 161.29)) (stroke (width 0) (type default)) (uuid "23c0fd56-48fa-52a7-8815-0a848e7a5402"))
+(global_label "I2C1_SCL" (shape passive) (at 180.34 161.29 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "f44480dc-008b-5032-b382-c22649ba1a80") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 161.29 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 231.14 161.29) (xy 236.22 161.29)) (stroke (width 0) (type default)) (uuid "db9f9379-69f6-54a5-92f7-0ef036d48e8e"))
+(global_label "A_AOUT0_B_AIN0" (shape passive) (at 236.22 161.29 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "2436e7f0-3327-59d0-a7bf-a324152bdc62") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 161.29 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 185.42 165.1) (xy 180.34 165.1)) (stroke (width 0) (type default)) (uuid "50810311-89d5-5ddc-a9b3-04cec1899cbe"))
+(global_label "I2C1_SDA" (shape passive) (at 180.34 165.1 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "8aa8f655-e675-508f-bc0a-637df63c2b9c") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 231.14 165.1) (xy 236.22 165.1)) (stroke (width 0) (type default)) (uuid "bcd431e5-f197-5846-9c5a-fbbf5c7b1e62"))
+(global_label "PROG_VOUT_B" (shape passive) (at 236.22 165.1 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "f42263e5-6b15-56fd-ad68-ba8f82b5b4d3") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:R") (at 325.12 48.26 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "11d61944-0137-5b74-a6b0-d34dd89c706b") (property "Reference" "R1" (at 318.77 46.99 0) (effects (font (size 1.27 1.27)) ))(property "Value" "10k 0.1%" (at 316.23 49.53 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 325.12 48.26 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 325.12 48.26 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "7388f58f-47c2-55ad-aa8c-3117146d5b12"))(pin "2" (uuid "999edccd-49c4-5adc-8fe2-cf9a4d71c68f"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "R1") (unit 1)))))
+(wire (pts (xy 325.12 44.45) (xy 332.74 44.45)) (stroke (width 0) (type default)) (uuid "6ee75ce0-84cd-5317-94c0-17c883cee3c2"))
+(global_label "PROG_VOUT_A" (shape passive) (at 332.74 44.45 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "9669e80f-2200-5b20-9b3e-78fe5c5b34e3") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 332.74 44.45 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 325.12 52.07) (xy 332.74 52.07)) (stroke (width 0) (type default)) (uuid "15f05bfa-74c4-5135-9aea-0dd90117d943"))
+(global_label "A_VOUT_HALF" (shape passive) (at 332.74 52.07 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "4ee90621-6fcf-5cb9-a754-f766576ba904") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 332.74 52.07 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:R") (at 325.12 63.5 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "6d54be6a-1dff-5803-9bf2-902e5a22d974") (property "Reference" "R2" (at 318.77 62.23 0) (effects (font (size 1.27 1.27)) ))(property "Value" "10k 0.1%" (at 316.23 64.77 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 325.12 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 325.12 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "8c621178-493d-528f-b749-4f19fd27c8c7"))(pin "2" (uuid "65e97a7c-a202-50bb-af5a-33f4d0d87d68"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "R2") (unit 1)))))
+(wire (pts (xy 325.12 52.07) (xy 325.12 59.69)) (stroke (width 0) (type default)) (uuid "690ccd29-4fe4-5046-b6d6-dc88f0b2a3a9"))
+(junction (at 325.12 52.07) (diameter 0) (color 0 0 0 0) (uuid "26f423e4-41b0-51d7-b4ac-600efa72e4f6"))
+(wire (pts (xy 325.12 67.31) (xy 332.74 67.31)) (stroke (width 0) (type default)) (uuid "dbf9f4df-71f7-5f85-b82a-077890e1fa52"))
+(global_label "GND" (shape passive) (at 332.74 67.31 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "e86c8b01-a530-5814-91fb-b1c34d37f93c") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 332.74 67.31 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:R") (at 325.12 88.9 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "6ce416ca-eac5-5f23-9baa-0c02e08795c9") (property "Reference" "R3" (at 318.77 87.63 0) (effects (font (size 1.27 1.27)) ))(property "Value" "10k 0.1%" (at 316.23 90.17 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 325.12 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 325.12 88.9 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "7aabb5f8-aaac-5fee-88af-fc881d541944"))(pin "2" (uuid "c0a06caa-83be-514d-865e-98fe24b4bccd"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "R3") (unit 1)))))
+(wire (pts (xy 325.12 85.09) (xy 332.74 85.09)) (stroke (width 0) (type default)) (uuid "188c948a-377f-55c0-820b-622143ac9b63"))
+(global_label "PROG_VOUT_B" (shape passive) (at 332.74 85.09 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "0a20ced7-e11e-5da8-8c3a-29f7c47122e8") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 332.74 85.09 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 325.12 92.71) (xy 332.74 92.71)) (stroke (width 0) (type default)) (uuid "3264008d-f7e0-5f2b-899a-59c1dc0ac79d"))
+(global_label "B_VOUT_HALF" (shape passive) (at 332.74 92.71 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "ba42843a-9d0f-5dc2-878f-1fb2feacd3d5") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 332.74 92.71 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:R") (at 325.12 104.14 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "5fa44c64-fb35-506c-b282-6f4ef5d6be48") (property "Reference" "R4" (at 318.77 102.87 0) (effects (font (size 1.27 1.27)) ))(property "Value" "10k 0.1%" (at 316.23 105.41 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 325.12 104.14 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 325.12 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "f1c8d713-0bdd-5782-a9d4-637f8910439d"))(pin "2" (uuid "8c8efbd8-2baa-5aaa-8381-ab1f8a5bdb2d"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "R4") (unit 1)))))
+(wire (pts (xy 325.12 92.71) (xy 325.12 100.33)) (stroke (width 0) (type default)) (uuid "2d32a0c7-4f55-519b-bd89-1797fa1d7e8d"))
+(junction (at 325.12 92.71) (diameter 0) (color 0 0 0 0) (uuid "8479a549-aa8c-558b-a7a8-b90f82b1bf75"))
+(wire (pts (xy 325.12 107.95) (xy 332.74 107.95)) (stroke (width 0) (type default)) (uuid "c6607783-96ca-5a75-b092-de6d6b1748cb"))
+(global_label "GND" (shape passive) (at 332.74 107.95 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "b8b97b24-c052-5c64-ac4d-57a084d3a03e") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 332.74 107.95 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:JS202011CQN") (at 335.28 146.05 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "60f4cb6c-2756-5a1b-8e3b-9cdf434ab2b0") (property "Reference" "SW1" (at 335.28 132.08 0) (effects (font (size 1.27 1.27)) ))(property "Value" "JS202011CQN" (at 335.28 134.62 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "GPIOJoiner:SW_JS202011CQN" (at 335.28 146.05 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse-c-k-slide-js-series-datasheet?assetguid=aba42b08-0d2c-423b-813d-a2faa5a3bb14" (at 335.28 146.05 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "2" (uuid "d27a62bb-3f48-56ae-a907-56c8932c56cb"))(pin "1" (uuid "1f176008-4e2b-5e12-89c1-e6810053f764"))(pin "3" (uuid "4e54ea2d-78ec-58c2-8af2-c7f50baed3dd"))(pin "5" (uuid "40ee6894-f91c-5906-8b65-51415bce7bbf"))(pin "4" (uuid "8790cae7-9025-5d4c-986b-bb4eeb5f36ba"))(pin "6" (uuid "05aab2c6-b784-5f6a-910e-e12e670bdb9f"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "SW1") (unit 1)))))
+(wire (pts (xy 342.9 138.43) (xy 347.98 138.43)) (stroke (width 0) (type default)) (uuid "bced35d9-fbf0-542e-9d11-6180772fb774"))
+(global_label "VREF_LINK" (shape passive) (at 347.98 138.43 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "56e60231-5f49-5966-997a-f9a4c6e8f5b5") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 347.98 138.43 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 327.66 140.97) (xy 322.58 140.97)) (stroke (width 0) (type default)) (uuid "913bd2a7-5954-581e-9c82-3a12f1878460"))
+(global_label "VREF_A" (shape passive) (at 322.58 140.97 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "1d181180-ba0a-5d89-9ff9-43107084d83c") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 322.58 140.97 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 342.9 143.51) (xy 347.98 143.51)) (stroke (width 0) (type default)) (uuid "d46dd280-3e3a-5c58-9137-553604b823f5"))
+(global_label "OG_A_3V3" (shape passive) (at 347.98 143.51 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "e6450fb9-4752-571a-879d-3b842abea65f") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 347.98 143.51 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 342.9 148.59) (xy 347.98 148.59)) (stroke (width 0) (type default)) (uuid "2d536749-6baa-56c5-975f-f6a7ebc356cb"))
+(global_label "VREF_LINK" (shape passive) (at 347.98 148.59 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "11503003-01f5-538b-a207-4098e020bd3d") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 347.98 148.59 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 327.66 151.13) (xy 322.58 151.13)) (stroke (width 0) (type default)) (uuid "7e8917f5-6ae5-5b34-804d-08cdb7efc6e5"))
+(global_label "VREF_B" (shape passive) (at 322.58 151.13 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "c2c5f79b-0be0-534b-9692-2c70affc79ab") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 322.58 151.13 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 342.9 153.67) (xy 347.98 153.67)) (stroke (width 0) (type default)) (uuid "a23d65f4-d5a1-525d-be47-66acb63e73f8"))
+(global_label "OG_B_3V3" (shape passive) (at 347.98 153.67 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "3259b861-a62f-542d-b512-06922bd49e88") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 347.98 153.67 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:BAT54C") (at 76.2 207.01 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "b034425a-6d83-5aaf-9f3f-6e18500cc959") (property "Reference" "D1" (at 76.2 199.39 0) (effects (font (size 1.27 1.27)) ))(property "Value" "BAT54C" (at 76.2 201.93 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 76.2 207.01 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54C.pdf" (at 76.2 207.01 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "84cab7be-155e-5817-9a5a-287d83aef034"))(pin "2" (uuid "0e84a2af-70a5-598b-8e79-cb5a9089553b"))(pin "3" (uuid "865a316f-1b45-5aba-9d5a-23351a0a42f8"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "D1") (unit 1)))))
+(wire (pts (xy 68.58 207.01) (xy 63.5 207.01)) (stroke (width 0) (type default)) (uuid "a588a602-fbd7-5b2e-8885-5cafbfa9394b"))
+(global_label "FW2_A_3V3" (shape passive) (at 63.5 207.01 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "b6278b58-7666-5e7b-8bb4-939ce6850471") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 63.5 207.01 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 83.82 207.01) (xy 88.9 207.01)) (stroke (width 0) (type default)) (uuid "77b9989c-2452-5a48-9f74-3c966f4124c3"))
+(global_label "FW2_B_3V3" (shape passive) (at 88.9 207.01 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "6189784c-0da8-5bc2-868d-0abbe644323a") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 88.9 207.01 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 76.2 212.09) (xy 83.82 212.09)) (stroke (width 0) (type default)) (uuid "19bc3b81-397a-599d-b391-70807ef065e2"))
+(global_label "EEPROM_VCC" (shape passive) (at 83.82 212.09 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "922ec1ff-6438-5abf-82d4-ae300f2d51a8") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 83.82 212.09 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:24LC02BT") (at 76.2 237.49 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "3e69de74-3d4c-5060-aa39-3861a47c4c26") (property "Reference" "U1" (at 76.2 222.25 0) (effects (font (size 1.27 1.27)) ))(property "Value" "24LC02BT-E/OT" (at 76.2 224.79 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 76.2 237.49 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/24AA02-24LC02B-24FC02-Data-Sheet-20001709L.pdf" (at 76.2 237.49 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "2e29d09d-6b7b-525f-8017-19126fa3a469"))(pin "3" (uuid "b61cb2a9-1723-5cb5-a38c-c6567e23c993"))(pin "5" (uuid "09e8a75a-29a2-5065-9d12-637c63e622a4"))(pin "4" (uuid "c806e4e8-8592-50d9-b76d-ac5013799f94"))(pin "2" (uuid "d88b25f4-3b2d-5bb4-a165-2b02e712fc79"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "U1") (unit 1)))))
+(wire (pts (xy 60.96 234.95) (xy 55.88 234.95)) (stroke (width 0) (type default)) (uuid "875be13a-554c-5b0c-bb04-3d51cd88adff"))
+(global_label "I2C1_SCL" (shape passive) (at 55.88 234.95 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "29fc41e8-aa45-5fcf-a2d9-ebf5898a5b2d") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 55.88 234.95 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 76.2 247.65) (xy 83.82 247.65)) (stroke (width 0) (type default)) (uuid "18bc4693-3a7f-5083-b901-6e3b00d6a6ae"))
+(global_label "GND" (shape passive) (at 83.82 247.65 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "35cc63a7-180a-56c9-bcfa-2e398df9af65") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 83.82 247.65 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 60.96 240.03) (xy 55.88 240.03)) (stroke (width 0) (type default)) (uuid "d3afcf6a-9f77-53a7-bcaa-b56479e31b24"))
+(global_label "I2C1_SDA" (shape passive) (at 55.88 240.03 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "a6798a58-9a7e-5651-8158-1dceba7d0f6d") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 55.88 240.03 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 76.2 227.33) (xy 83.82 227.33)) (stroke (width 0) (type default)) (uuid "45e505a8-850f-5504-b1c4-81540b6d5384"))
+(global_label "EEPROM_VCC" (shape passive) (at 83.82 227.33 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "60e9332e-9d99-58c6-a174-ec68b1744a44") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 83.82 227.33 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 91.44 240.03) (xy 96.52 240.03)) (stroke (width 0) (type default)) (uuid "20cc9d0d-0acd-5658-975f-b1e554a77a9c"))
+(global_label "GND" (shape passive) (at 96.52 240.03 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "b4fa9027-badf-5a53-965c-032f8c141458") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 96.52 240.03 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:C") (at 132.08 234.95 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "dabe7cf8-c2f2-5594-b3eb-a643949cb25b") (property "Reference" "C1" (at 125.73 232.41 0) (effects (font (size 1.27 1.27)) ))(property "Value" "100nF" (at 125.73 237.49 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 132.08 234.95 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 132.08 234.95 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "32ecdcb7-bba1-5605-8d0e-9ea18447e607"))(pin "2" (uuid "d124a857-fbdf-5e43-b264-64916c04f267"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "C1") (unit 1)))))
+(wire (pts (xy 132.08 231.14) (xy 139.7 231.14)) (stroke (width 0) (type default)) (uuid "22257364-36c4-50d4-b7b7-dd6679a86b8b"))
+(global_label "EEPROM_VCC" (shape passive) (at 139.7 231.14 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "c97da7f2-9d4d-59b3-870c-3cd2dd4046e4") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 139.7 231.14 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 132.08 238.76) (xy 139.7 238.76)) (stroke (width 0) (type default)) (uuid "acdf0bc6-848e-5d07-b571-0577fda85639"))
+(global_label "GND" (shape passive) (at 139.7 238.76 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "3c4a369b-e854-5efd-8d74-670c2fd69710") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 139.7 238.76 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:R") (at 187.96 203.2 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes) (uuid "633887e3-5aba-581e-81a1-56719d072fac") (property "Reference" "R5" (at 181.61 201.93 0) (effects (font (size 1.27 1.27)) ))(property "Value" "4.7k" (at 179.07 204.47 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 187.96 203.2 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 187.96 203.2 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Assembly" "DNP" (at 196.85 205.74 0) (effects (font (size 1.27 1.27)) )) (pin "1" (uuid "a9d7ea98-6e82-5d97-8961-2ee0e43aece9"))(pin "2" (uuid "4fdf0a85-4dd0-5166-8d18-6a5cb01332f0"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "R5") (unit 1)))))
+(wire (pts (xy 187.96 199.39) (xy 195.58 199.39)) (stroke (width 0) (type default)) (uuid "31b655f4-38c8-57b5-b783-a95a5ab4c5c0"))
+(global_label "EEPROM_VCC" (shape passive) (at 195.58 199.39 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "ea978709-be12-51c9-b941-9458296c60c9") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 195.58 199.39 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 187.96 207.01) (xy 195.58 207.01)) (stroke (width 0) (type default)) (uuid "f58a021a-d5c1-50c0-ad4c-700660ce7725"))
+(global_label "I2C1_SCL" (shape passive) (at 195.58 207.01 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "7bfe1609-8ef4-5734-a67d-dcca4f3683e9") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 195.58 207.01 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:R") (at 238.76 203.2 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes) (uuid "6cf64b00-d6e4-57f3-b293-55a718c6ee40") (property "Reference" "R6" (at 232.41 201.93 0) (effects (font (size 1.27 1.27)) ))(property "Value" "4.7k" (at 229.87 204.47 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 238.76 203.2 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 238.76 203.2 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Assembly" "DNP" (at 247.65 205.74 0) (effects (font (size 1.27 1.27)) )) (pin "1" (uuid "93763912-34a0-56d3-bef7-2dbb4dcf5752"))(pin "2" (uuid "a8d2406c-11c5-5b61-b65f-70e013b33cfa"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "R6") (unit 1)))))
+(wire (pts (xy 238.76 199.39) (xy 246.38 199.39)) (stroke (width 0) (type default)) (uuid "9d1fa89d-f7d7-5e58-9bce-3c15c6899577"))
+(global_label "EEPROM_VCC" (shape passive) (at 246.38 199.39 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "7b564c7e-0123-5cd1-b276-3781725cd744") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 246.38 199.39 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 238.76 207.01) (xy 246.38 207.01)) (stroke (width 0) (type default)) (uuid "12144052-e553-5639-8cb8-10d2eb7b289f"))
+(global_label "I2C1_SDA" (shape passive) (at 246.38 207.01 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "0fa466b0-e4a9-525d-9b83-c2338695f7ec") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 246.38 207.01 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:R") (at 187.96 229.87 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes) (uuid "6738b822-ecd6-5169-a5f8-800ffd1d9d35") (property "Reference" "R7" (at 181.61 228.6 0) (effects (font (size 1.27 1.27)) ))(property "Value" "120" (at 179.07 231.14 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 187.96 229.87 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 187.96 229.87 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Assembly" "DNP" (at 196.85 232.41 0) (effects (font (size 1.27 1.27)) )) (pin "1" (uuid "c4c53c5d-7b83-5ff2-b7a6-e7e971a4937a"))(pin "2" (uuid "5bb46264-44e4-54a6-81d0-14ce8aa0a490"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "R7") (unit 1)))))
+(wire (pts (xy 187.96 226.06) (xy 195.58 226.06)) (stroke (width 0) (type default)) (uuid "3e22fffd-462e-5f2b-bd8a-2ce23de07ca0"))
+(global_label "CAN_L" (shape passive) (at 195.58 226.06 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "3361690b-f011-5082-acfe-217dca4e2ff6") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 195.58 226.06 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 187.96 233.68) (xy 195.58 233.68)) (stroke (width 0) (type default)) (uuid "7b9ad29f-6910-571c-acf3-4565ed718a55"))
+(global_label "CAN_H" (shape passive) (at 195.58 233.68 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "de276714-65ef-51d5-bac3-28faaff2f2a0") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 195.58 233.68 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:R") (at 238.76 229.87 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes) (uuid "35721613-0c18-544a-8ef4-e4a8d4311292") (property "Reference" "R8" (at 232.41 228.6 0) (effects (font (size 1.27 1.27)) ))(property "Value" "120" (at 229.87 231.14 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 238.76 229.87 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 238.76 229.87 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Assembly" "DNP" (at 247.65 232.41 0) (effects (font (size 1.27 1.27)) )) (pin "1" (uuid "5100ac1c-face-5a87-a028-a1d5209facd5"))(pin "2" (uuid "eb6a666c-f434-5ebc-a95f-a2f966c71d97"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "R8") (unit 1)))))
+(wire (pts (xy 238.76 226.06) (xy 246.38 226.06)) (stroke (width 0) (type default)) (uuid "66a2744b-5839-5cc4-8e0a-521819265ed6"))
+(global_label "CAN_L" (shape passive) (at 246.38 226.06 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "29a74abf-a243-580a-9057-ea3b3a9701aa") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 246.38 226.06 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(wire (pts (xy 238.76 233.68) (xy 246.38 233.68)) (stroke (width 0) (type default)) (uuid "351e3550-6c2e-5cf2-bc48-c839acfdedef"))
+(global_label "CAN_H" (shape passive) (at 246.38 233.68 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "501cbe61-9964-5941-8253-808b39045210") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 246.38 233.68 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:TestPoint") (at 302.26 203.2 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "22658e43-7fa6-589d-8253-84272e6955ce") (property "Reference" "TP1" (at 302.26 195.58 0) (effects (font (size 1.27 1.27)) ))(property "Value" "GPIO25_A" (at 302.26 198.12 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 302.26 203.2 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 302.26 203.2 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "4b434c81-5f6e-517e-b072-9d367a7bf61e"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "TP1") (unit 1)))))
+(wire (pts (xy 302.26 203.2) (xy 309.88 203.2)) (stroke (width 0) (type default)) (uuid "21e32da0-7f5c-53ce-9737-67bfbc31885b"))
+(global_label "GPIO25_A" (shape passive) (at 309.88 203.2 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "5be765cc-9703-5b3d-b53c-f40a58a81dd2") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 309.88 203.2 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:TestPoint") (at 358.14 203.2 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "937c17a6-a45e-53ae-a12a-25e265cf9ee5") (property "Reference" "TP2" (at 358.14 195.58 0) (effects (font (size 1.27 1.27)) ))(property "Value" "GPIO25_B" (at 358.14 198.12 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 358.14 203.2 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 358.14 203.2 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "c574ebf5-85c8-53bb-8b59-dc3d71343703"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "TP2") (unit 1)))))
+(wire (pts (xy 358.14 203.2) (xy 365.76 203.2)) (stroke (width 0) (type default)) (uuid "b44ea059-01b6-52b4-9d2c-72460cf5f3c7"))
+(global_label "GPIO25_B" (shape passive) (at 365.76 203.2 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "aebac951-63a6-5552-a0f6-452db0f857e5") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 365.76 203.2 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:TestPoint") (at 302.26 220.98 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "75b4b25c-8e07-5eb9-8512-52c9bccfacc8") (property "Reference" "TP3" (at 302.26 213.36 0) (effects (font (size 1.27 1.27)) ))(property "Value" "AIN3_A" (at 302.26 215.9 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 302.26 220.98 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 302.26 220.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "c9e16d9e-e720-5c2d-84e3-218a2a147d06"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "TP3") (unit 1)))))
+(wire (pts (xy 302.26 220.98) (xy 309.88 220.98)) (stroke (width 0) (type default)) (uuid "b8296a10-204f-584e-989c-0cda9f23be4d"))
+(global_label "AIN3_A" (shape passive) (at 309.88 220.98 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "bd6b37ea-baf2-5517-a590-c99a9656daca") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 309.88 220.98 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:TestPoint") (at 358.14 220.98 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "158c6fd8-c481-5888-8702-87e4fffbb71a") (property "Reference" "TP4" (at 358.14 213.36 0) (effects (font (size 1.27 1.27)) ))(property "Value" "AIN3_B" (at 358.14 215.9 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 358.14 220.98 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 358.14 220.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "89988565-1a90-5017-a60f-3f28b7ef05d3"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "TP4") (unit 1)))))
+(wire (pts (xy 358.14 220.98) (xy 365.76 220.98)) (stroke (width 0) (type default)) (uuid "cdd64b19-9458-5e53-aada-115a59c6f2e2"))
+(global_label "AIN3_B" (shape passive) (at 365.76 220.98 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "09b02083-bcec-55e8-ba43-988449a2a7c1") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 365.76 220.98 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:TestPoint") (at 302.26 238.76 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "0d44c81c-0ffc-5cf1-9e46-e0fbdd233299") (property "Reference" "TP5" (at 302.26 231.14 0) (effects (font (size 1.27 1.27)) ))(property "Value" "GND" (at 302.26 233.68 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 302.26 238.76 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 302.26 238.76 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "e056397e-91d7-54ff-a6a4-804ed1402667"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "TP5") (unit 1)))))
+(wire (pts (xy 302.26 238.76) (xy 309.88 238.76)) (stroke (width 0) (type default)) (uuid "b6dddac8-bf96-5faa-8fef-fb94d0cd7235"))
+(global_label "GND" (shape passive) (at 309.88 238.76 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "d7927a8a-4e85-562f-8308-3115638175c5") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 309.88 238.76 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:TestPoint") (at 358.14 238.76 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "dd6ab98b-85a5-5f64-b740-9c9dc99ca5fe") (property "Reference" "TP6" (at 358.14 231.14 0) (effects (font (size 1.27 1.27)) ))(property "Value" "EEPROM_VCC" (at 358.14 233.68 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 358.14 238.76 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 358.14 238.76 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "a9b3e964-326c-5da5-9fc7-848634da49e3"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "TP6") (unit 1)))))
+(wire (pts (xy 358.14 238.76) (xy 365.76 238.76)) (stroke (width 0) (type default)) (uuid "19bb7103-30b4-5c93-95d3-4bc16842e632"))
+(global_label "EEPROM_VCC" (shape passive) (at 365.76 238.76 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "0598a32c-f45a-54fb-92f2-5ac355701a42") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 365.76 238.76 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:PWR_FLAG") (at 170.18 255.27 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "9f677ba3-2d9b-501d-89e0-520b4f048c07") (property "Reference" "#FLG1" (at 170.18 251.46 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Value" "PWR_FLAG" (at 170.18 249.555 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "" (at 170.18 255.27 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 170.18 255.27 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "8a3e15a0-0868-5364-976c-911c88ac9b03"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "#FLG1") (unit 1)))))
+(wire (pts (xy 170.18 255.27) (xy 177.8 255.27)) (stroke (width 0) (type default)) (uuid "6a8dbfb1-2a5d-51af-aa1a-bf72ee3bfa9f"))
+(global_label "EEPROM_VCC" (shape passive) (at 177.8 255.27 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "64423af7-b603-5d6e-8707-6c34acbd4dbc") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 177.8 255.27 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(symbol (lib_id "GPIOJoiner:PWR_FLAG") (at 231.14 255.27 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "8e3de86c-3afd-5257-813e-f92754278118") (property "Reference" "#FLG2" (at 231.14 251.46 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Value" "PWR_FLAG" (at 231.14 249.555 0) (effects (font (size 1.27 1.27)) ))(property "Footprint" "" (at 231.14 255.27 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 231.14 255.27 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "a2f9cad2-b36e-53e9-9605-2cd57c408bf9"))(instances (project "gpiojoiner" (path "/ecc32f1b-6981-5d1f-a0a1-6abdf6c393d6" (reference "#FLG2") (unit 1)))))
+(wire (pts (xy 231.14 255.27) (xy 238.76 255.27)) (stroke (width 0) (type default)) (uuid "20dc110a-7ac2-5f90-bcf4-defb550cf377"))
+(global_label "GND" (shape passive) (at 238.76 255.27 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "a1b0469d-d9f5-5522-871e-07f1eafbcb03") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 238.76 255.27 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(text "GPIO JOINER / REV A / TWO-DEVICE TEST FIXTURE" (at 15.24 12.7 0) (effects (font (size 2.54 2.54)) (justify left top)) (uuid "b8ddc47e-b178-5163-b5a2-7c236e4146a3"))
+(text "SIDE A: choose WEST FW2 or NORTH OG" (at 20.32 25.4 0) (effects (font (size 1.524 1.524)) (justify left top)) (uuid "74a01ae5-c4c2-5ac1-b6ab-b31e15964d30"))
+(text "SIDE B: choose EAST FW2 or SOUTH OG" (at 152.4 25.4 0) (effects (font (size 1.524 1.524)) (justify left top)) (uuid "d9dc0aa3-bbbd-584f-aafc-e7c5a33ee3e2"))
+(text "DIVIDED PROGRAMMABLE OUTPUTS" (at 292.1 25.4 0) (effects (font (size 1.524 1.524)) (justify left top)) (uuid "c42645b3-d29d-5c7b-90e1-ecb1a92c6e39"))
+(text "Firmware: VOUT = 2 x opposite AIN2\n0.1% divider; nominal range 0 to 2.75 V." (at 287.02 114.3 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "d4318f1b-46cb-5096-9670-f97aea2a3032"))
+(text "ONE DEVICE PER SIDE / TWO DEVICES MAXIMUM" (at 15.24 176.53 0) (effects (font (size 1.524 1.524)) (justify left top)) (uuid "0c675feb-76f4-5a6a-9379-55319a624f9e"))
+(text "Named nets implement SPI, UART and GPIO swaps. I2C0/I2C1 are direct.\n5 V outputs and OG SWD are intentionally not connected." (at 15.24 180.34 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "d5468e46-38e5-5ed3-b632-db9f47465725"))
+(text "ORCA IDENTIFICATION / SHARED I2C1" (at 15.24 190.5 0) (effects (font (size 1.524 1.524)) (justify left top)) (uuid "789b2c4e-b297-5d77-b6ff-2a3e006d0167"))
+(text "OPTIONAL BUS COMPONENTS" (at 162.56 190.5 0) (effects (font (size 1.524 1.524)) (justify left top)) (uuid "0c48d275-75ed-5d73-9e88-b35fc1818178"))
+(text "DNP pull-ups: measure host pull-ups first." (at 162.56 215.9 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "e91457e2-b7c5-5c89-8310-c91eec3e7cfa"))
+(text "DNP termination: check host termination." (at 162.56 241.3 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "01fb9790-5179-5dff-a002-1949dcb97f5a"))
+(text "VREF MODE - SWITCH WITH POWER OFF" (at 287.02 124.46 0) (effects (font (size 1.524 1.524)) (justify left top)) (uuid "1eb101eb-29f2-5c7c-bc48-b7ecc389a1cb"))
+(text "FW2/mixed: contacts 1-2 and 4-5; linked VREF.\nEnable exactly ONE FW2 IO voltage source.\nOG/OG: contacts 2-3 and 5-6; local 3.3 V." (at 287.02 162.56 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "5098ae0c-214a-51ca-b793-597aaa549295"))
+(text "SPARE SIGNALS / BENCH TEST POINTS" (at 287.02 190.5 0) (effects (font (size 1.524 1.524)) (justify left top)) (uuid "5273b05f-af1f-5751-9c6e-336513686b55"))
+(text "U1 WP tied low for programming. EEPROM at 0x50.\nBAT54C isolates the two FW2 3.3 V outputs.\nEEPROM image and host power/pull-ups need bench validation." (at 15.24 256.54 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "8bd290d2-321b-5db0-b139-26ccb70b4012"))
+(text "PROTOTYPE - VERIFY MATING AND FIRMWARE BEFORE FABRICATION" (at 15.24 274.32 0) (effects (font (size 1.524 1.524)) (justify left top)) (uuid "36c0c395-79c5-53c1-be0b-70c31d6c99fb"))
+(polyline (pts (xy 279.4 25.4)(xy 279.4 262.89)) (stroke (width 0.254) (type default)) (uuid "e705ebb0-1ba7-599d-a21a-fbba0e77da07"))
+(polyline (pts (xy 15.24 187.96)(xy 401.32 187.96)) (stroke (width 0.254) (type default)) (uuid "24eaafb7-8b13-5cf2-bf10-ef2c2a954445"))
+(sheet_instances (path "/" (page "1"))) (embedded_fonts no))
